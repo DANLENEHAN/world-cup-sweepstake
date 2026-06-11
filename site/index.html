@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>World Cup 2026 Sweepstake</title>
+    <style>
+      :root {
+        --bg: #0d1b2a;
+        --bg-card: #16263a;
+        --bg-card-soft: #1d3049;
+        --border: #2c4361;
+        --text: #eef4fb;
+        --text-muted: #93a8c2;
+        --accent: #4ade80;
+        --gold: #fbbf24;
+        --silver: #cbd5e1;
+        --bronze: #d59c6b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        background:
+          radial-gradient(1100px 500px at 50% -10%, #1b3a5c 0%, transparent 70%),
+          var(--bg);
+        color: var(--text);
+        margin: 0;
+        min-height: 100vh;
+        padding: 2.5rem 1rem 4rem;
+      }
+
+      main {
+        max-width: 640px;
+        margin: 0 auto;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      header .kicker {
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        font-size: 0.75rem;
+        color: var(--accent);
+        font-weight: 600;
+      }
+
+      h1 {
+        margin: 0.35rem 0 0.5rem;
+        font-size: clamp(1.8rem, 5vw, 2.6rem);
+        line-height: 1.1;
+      }
+
+      header p {
+        color: var(--text-muted);
+        margin: 0;
+      }
+
+      .card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      }
+
+      .card h2 {
+        margin: 0 0 1rem;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--text-muted);
+      }
+
+      /* Leaderboard */
+      #scores {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+
+      .row {
+        display: grid;
+        grid-template-columns: 2.2rem 1fr auto;
+        align-items: center;
+        gap: 0.9rem;
+        background: var(--bg-card-soft);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 0.8rem 1rem;
+      }
+
+      .row .rank {
+        font-weight: 800;
+        font-size: 1.1rem;
+        text-align: center;
+        color: var(--text-muted);
+      }
+
+      .row.first .rank { color: var(--gold); }
+      .row.second .rank { color: var(--silver); }
+      .row.third .rank { color: var(--bronze); }
+
+      .row.first {
+        border-color: var(--gold);
+        background: linear-gradient(90deg, rgba(251, 191, 36, 0.12), var(--bg-card-soft) 60%);
+      }
+
+      .row .player {
+        font-weight: 600;
+        font-size: 1.05rem;
+      }
+
+      .row .teams {
+        display: block;
+        font-size: 0.75rem;
+        font-weight: 400;
+        color: var(--text-muted);
+        margin-top: 0.15rem;
+      }
+
+      .row .points {
+        font-size: 1.4rem;
+        font-weight: 800;
+        font-variant-numeric: tabular-nums;
+        color: var(--accent);
+      }
+
+      .row .points small {
+        font-size: 0.65rem;
+        font-weight: 600;
+        color: var(--text-muted);
+        margin-left: 0.25rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      /* Scoring rules */
+      .rules {
+        display: flex;
+        flex-direction: column;
+        gap: 0.45rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .rules li {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 1rem;
+        padding: 0.45rem 0.25rem;
+        border-bottom: 1px dashed var(--border);
+        color: var(--text-muted);
+      }
+
+      .rules li:last-child {
+        border-bottom: none;
+      }
+
+      .rules .pts {
+        font-weight: 700;
+        color: var(--text);
+        white-space: nowrap;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .rules .note {
+        font-size: 0.8rem;
+        margin-top: 0.75rem;
+        color: var(--text-muted);
+      }
+
+      /* Footer / links */
+      .links {
+        text-align: center;
+      }
+
+      .button {
+        display: inline-block;
+        background: var(--accent);
+        color: #07301b;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 0.75rem 1.4rem;
+        border-radius: 999px;
+        transition: transform 0.1s ease, box-shadow 0.1s ease;
+      }
+
+      .button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 6px 18px rgba(74, 222, 128, 0.35);
+      }
+
+      #status {
+        text-align: center;
+        color: var(--text-muted);
+        font-size: 0.8rem;
+        margin-top: 1.25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="kicker">Canada · Mexico · USA 2026</div>
+        <h1>⚽ World Cup Sweepstake</h1>
+        <p>Family leaderboard — updated automatically every 5 minutes</p>
+      </header>
+
+      <section class="card">
+        <h2>Leaderboard</h2>
+        <div id="scores"></div>
+      </section>
+
+      <section class="card">
+        <h2>How scoring works</h2>
+        <ul class="rules">
+          <li><span>Group stage win</span><span class="pts">2 pts</span></li>
+          <li><span>Group stage draw</span><span class="pts">1 pt each</span></li>
+          <li><span>Round of 32 win</span><span class="pts">3 pts</span></li>
+          <li><span>Round of 16 win</span><span class="pts">4 pts</span></li>
+          <li><span>Quarter-final win</span><span class="pts">5 pts</span></li>
+          <li><span>Semi-final win</span><span class="pts">6 pts</span></li>
+          <li><span>Third place play-off win</span><span class="pts">4 pts</span></li>
+          <li><span>Winning the Final</span><span class="pts">12 pts</span></li>
+          <li><span>Final runner-up</span><span class="pts">6 pts</span></li>
+        </ul>
+        <p class="note">
+          Each player has 9 teams. Knockout matches decided on penalties count
+          as a win for the team that goes through.
+        </p>
+      </section>
+
+      <section class="links">
+        <a
+          class="button"
+          href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures"
+          target="_blank"
+          rel="noopener"
+        >
+          Official FIFA scores &amp; fixtures →
+        </a>
+        <p id="status"></p>
+      </section>
+    </main>
+
+    <script>
+      const SCORES_URL = "data/scores.json";
+
+      const PLAYER_TEAMS = {
+        Dan: ["Brazil", "Belgium", "Morocco", "Uruguay", "Sweden", "South Korea", "Bosnia and Herzegovina", "DR Congo", "Uzbekistan"],
+        Mum: ["Spain", "Germany", "Japan", "USA", "Scotland", "Ivory Coast", "Czech Republic", "Panama", "Qatar"],
+        Dad: ["France", "Portugal", "Colombia", "Ecuador", "Austria", "Ghana", "Egypt", "South Africa", "Cape Verde"],
+        Matthew: ["Argentina", "Netherlands", "Switzerland", "Turkey", "Senegal", "Australia", "Algeria", "Iran", "New Zealand"],
+        Naomi: ["England", "Norway", "Mexico", "Croatia", "Canada", "Paraguay", "Tunisia", "Saudi Arabia", "Iraq"],
+      };
+
+      const RANK_CLASSES = ["first", "second", "third"];
+
+      async function loadScores() {
+        const status = document.getElementById("status");
+
+        try {
+          const response = await fetch(SCORES_URL, { cache: "no-store" });
+
+          if (!response.ok) {
+            throw new Error(`Request failed: ${response.status}`);
+          }
+
+          const data = await response.json();
+          renderScores(data.scores);
+
+          const updated = new Date(data.updated_at);
+          status.textContent = `Scores last updated: ${updated.toLocaleString()}`;
+        } catch (error) {
+          status.textContent = `Unable to load scores: ${error.message}`;
+        }
+      }
+
+      function renderScores(scores) {
+        const container = document.getElementById("scores");
+        container.innerHTML = "";
+
+        const sorted = Object.entries(scores).sort(([, a], [, b]) => b - a);
+
+        sorted.forEach(([player, points], index) => {
+          // Players tied on points share the better rank.
+          const rank =
+            index > 0 && points === sorted[index - 1][1]
+              ? container.lastChild.dataset.rank
+              : index + 1;
+
+          const row = document.createElement("div");
+          row.className = "row";
+          row.dataset.rank = rank;
+
+          if (RANK_CLASSES[rank - 1]) {
+            row.classList.add(RANK_CLASSES[rank - 1]);
+          }
+
+          const rankEl = document.createElement("div");
+          rankEl.className = "rank";
+          rankEl.textContent = rank;
+
+          const playerEl = document.createElement("div");
+          playerEl.className = "player";
+          playerEl.textContent = player;
+
+          const teams = PLAYER_TEAMS[player];
+          if (teams) {
+            const teamsEl = document.createElement("span");
+            teamsEl.className = "teams";
+            teamsEl.textContent = teams.join(" · ");
+            playerEl.append(teamsEl);
+          }
+
+          const pointsEl = document.createElement("div");
+          pointsEl.className = "points";
+          pointsEl.textContent = points;
+
+          const label = document.createElement("small");
+          label.textContent = points === 1 ? "pt" : "pts";
+          pointsEl.append(label);
+
+          row.append(rankEl, playerEl, pointsEl);
+          container.append(row);
+        });
+      }
+
+      loadScores();
+      setInterval(loadScores, 60_000);
+    </script>
+  </body>
+</html>

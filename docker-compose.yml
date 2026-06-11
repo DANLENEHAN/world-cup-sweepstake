@@ -1,0 +1,24 @@
+services:
+  tunnel:
+    container_name: cloudflared-tunnel
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    command: tunnel run
+    env_file:
+      - .env
+
+  static-site:
+    container_name: static-site
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
+
+  scraper:
+    container_name: scraper
+    build: ./scraper
+    restart: unless-stopped
+    volumes:
+      - ./site/data:/app/site/data
