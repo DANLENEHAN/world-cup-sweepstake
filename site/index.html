@@ -6,16 +6,20 @@
     <title>World Cup 2026 Sweepstake</title>
     <style>
       :root {
-        --bg: #0d1b2a;
-        --bg-card: #16263a;
-        --bg-card-soft: #1d3049;
-        --border: #2c4361;
-        --text: #eef4fb;
-        --text-muted: #93a8c2;
-        --accent: #4ade80;
-        --gold: #fbbf24;
-        --silver: #cbd5e1;
-        --bronze: #d59c6b;
+        /* FIFA 2026 host-nation trio: Canada red, Mexico green, USA blue */
+        --red: #e11d2e;
+        --green: #00a651;
+        --blue: #0c4da2;
+        --bg: #f4f7fb;
+        --bg-card: #ffffff;
+        --bg-card-soft: #f0f5fa;
+        --border: #dbe5f0;
+        --text: #15243a;
+        --text-muted: #5d7186;
+        --accent: var(--green);
+        --gold: #eab308;
+        --silver: #94a3b8;
+        --bronze: #c0833f;
       }
 
       * {
@@ -25,12 +29,16 @@
       body {
         font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
         background:
-          radial-gradient(1100px 500px at 50% -10%, #1b3a5c 0%, transparent 70%),
+          radial-gradient(900px 420px at 15% -5%, rgba(225, 29, 46, 0.09), transparent 65%),
+          radial-gradient(900px 420px at 85% -5%, rgba(12, 77, 162, 0.11), transparent 65%),
+          radial-gradient(700px 380px at 50% 0%, rgba(0, 166, 81, 0.08), transparent 70%),
           var(--bg);
         color: var(--text);
         margin: 0;
         min-height: 100vh;
         padding: 2.5rem 1rem 4rem;
+        border-top: 6px solid;
+        border-image: linear-gradient(90deg, var(--red) 33%, var(--green) 33% 66%, var(--blue) 66%) 1;
       }
 
       main {
@@ -47,14 +55,18 @@
         text-transform: uppercase;
         letter-spacing: 0.25em;
         font-size: 0.75rem;
-        color: var(--accent);
-        font-weight: 600;
+        font-weight: 700;
+        background: linear-gradient(90deg, var(--red), var(--green), var(--blue));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
       }
 
       h1 {
         margin: 0.35rem 0 0.5rem;
         font-size: clamp(1.8rem, 5vw, 2.6rem);
         line-height: 1.1;
+        color: var(--blue);
       }
 
       header p {
@@ -68,7 +80,7 @@
         border-radius: 16px;
         padding: 1.5rem;
         margin-bottom: 1.5rem;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 8px 24px rgba(21, 36, 58, 0.08);
       }
 
       .card h2 {
@@ -110,7 +122,7 @@
 
       .row.first {
         border-color: var(--gold);
-        background: linear-gradient(90deg, rgba(251, 191, 36, 0.12), var(--bg-card-soft) 60%);
+        background: linear-gradient(90deg, rgba(234, 179, 8, 0.16), var(--bg-card-soft) 60%);
       }
 
       .row .player {
@@ -130,7 +142,7 @@
         font-size: 1.4rem;
         font-weight: 800;
         font-variant-numeric: tabular-nums;
-        color: var(--accent);
+        color: var(--blue);
       }
 
       .row .points small {
@@ -186,8 +198,8 @@
 
       .button {
         display: inline-block;
-        background: var(--accent);
-        color: #07301b;
+        background: linear-gradient(90deg, var(--green), var(--blue));
+        color: #ffffff;
         font-weight: 700;
         text-decoration: none;
         padding: 0.75rem 1.4rem;
@@ -197,7 +209,7 @@
 
       .button:hover {
         transform: translateY(-1px);
-        box-shadow: 0 6px 18px rgba(74, 222, 128, 0.35);
+        box-shadow: 0 6px 18px rgba(12, 77, 162, 0.35);
       }
 
       #status {
