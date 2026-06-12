@@ -1,0 +1,2397 @@
+{
+  "updated_at": "2026-06-12T09:55:05.962352+00:00",
+  "games": [
+    {
+      "date": "2026-06-11",
+      "date_label": "Thursday 11 June 2026",
+      "stage": "First Stage",
+      "group": "Group A",
+      "venue": "Mexico City Stadium (Mexico City)",
+      "status": "FT",
+      "played": true,
+      "home": {
+        "abbr": "MEX",
+        "name": "Mexico",
+        "player": "Naomi",
+        "score": 2,
+        "winner": true
+      },
+      "away": {
+        "abbr": "RSA",
+        "name": "South Africa",
+        "player": "Dad",
+        "score": 0,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-12",
+      "date_label": "Friday 12 June 2026",
+      "stage": "First Stage",
+      "group": "Group A",
+      "venue": "Guadalajara Stadium (Guadalajara)",
+      "status": "FT",
+      "played": true,
+      "home": {
+        "abbr": "KOR",
+        "name": "Korea Republic",
+        "player": "Dan",
+        "score": 2,
+        "winner": true
+      },
+      "away": {
+        "abbr": "CZE",
+        "name": "Czechia",
+        "player": "Mum",
+        "score": 1,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-12",
+      "date_label": "Friday 12 June 2026",
+      "stage": "First Stage",
+      "group": "Group B",
+      "venue": "Toronto Stadium (Toronto)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "CAN",
+        "name": "Canada",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "BIH",
+        "name": "Bosnia and Herzegovina",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-13",
+      "date_label": "Saturday 13 June 2026",
+      "stage": "First Stage",
+      "group": "Group D",
+      "venue": "Los Angeles Stadium (Los Angeles)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "USA",
+        "name": "USA",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "PAR",
+        "name": "Paraguay",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-13",
+      "date_label": "Saturday 13 June 2026",
+      "stage": "First Stage",
+      "group": "Group B",
+      "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "QAT",
+        "name": "Qatar",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "SUI",
+        "name": "Switzerland",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-13",
+      "date_label": "Saturday 13 June 2026",
+      "stage": "First Stage",
+      "group": "Group C",
+      "venue": "New York/New Jersey Stadium (New Jersey)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "BRA",
+        "name": "Brazil",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "MAR",
+        "name": "Morocco",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-14",
+      "date_label": "Sunday 14 June 2026",
+      "stage": "First Stage",
+      "group": "Group C",
+      "venue": "Boston Stadium (Boston)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "HAI",
+        "name": "Haiti",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "SCO",
+        "name": "Scotland",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-14",
+      "date_label": "Sunday 14 June 2026",
+      "stage": "First Stage",
+      "group": "Group D",
+      "venue": "BC Place Vancouver (Vancouver)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "AUS",
+        "name": "Australia",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "TUR",
+        "name": "T\u00fcrkiye",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-14",
+      "date_label": "Sunday 14 June 2026",
+      "stage": "First Stage",
+      "group": "Group E",
+      "venue": "Houston Stadium (Houston)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "GER",
+        "name": "Germany",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "CUW",
+        "name": "Cura\u00e7ao",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-14",
+      "date_label": "Sunday 14 June 2026",
+      "stage": "First Stage",
+      "group": "Group F",
+      "venue": "Dallas Stadium (Dallas)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "NED",
+        "name": "Netherlands",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "JPN",
+        "name": "Japan",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-14",
+      "date_label": "Sunday 14 June 2026",
+      "stage": "First Stage",
+      "group": "Group E",
+      "venue": "Philadelphia Stadium (Philadelphia)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "CIV",
+        "name": "C\u00f4te d'Ivoire",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "ECU",
+        "name": "Ecuador",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-15",
+      "date_label": "Monday 15 June 2026",
+      "stage": "First Stage",
+      "group": "Group F",
+      "venue": "Monterrey Stadium (Monterrey)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "SWE",
+        "name": "Sweden",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "TUN",
+        "name": "Tunisia",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-15",
+      "date_label": "Monday 15 June 2026",
+      "stage": "First Stage",
+      "group": "Group H",
+      "venue": "Atlanta Stadium (Atlanta)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "ESP",
+        "name": "Spain",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "CPV",
+        "name": "Cabo Verde",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-15",
+      "date_label": "Monday 15 June 2026",
+      "stage": "First Stage",
+      "group": "Group G",
+      "venue": "Seattle Stadium (Seattle)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "BEL",
+        "name": "Belgium",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "EGY",
+        "name": "Egypt",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-15",
+      "date_label": "Monday 15 June 2026",
+      "stage": "First Stage",
+      "group": "Group H",
+      "venue": "Miami Stadium (Miami)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "KSA",
+        "name": "Saudi Arabia",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "URU",
+        "name": "Uruguay",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "date_label": "Tuesday 16 June 2026",
+      "stage": "First Stage",
+      "group": "Group G",
+      "venue": "Los Angeles Stadium (Los Angeles)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "IRN",
+        "name": "IR Iran",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "NZL",
+        "name": "New Zealand",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "date_label": "Tuesday 16 June 2026",
+      "stage": "First Stage",
+      "group": "Group I",
+      "venue": "New York/New Jersey Stadium (New Jersey)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "FRA",
+        "name": "France",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "SEN",
+        "name": "Senegal",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "date_label": "Tuesday 16 June 2026",
+      "stage": "First Stage",
+      "group": "Group I",
+      "venue": "Boston Stadium (Boston)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "IRQ",
+        "name": "Iraq",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "NOR",
+        "name": "Norway",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-17",
+      "date_label": "Wednesday 17 June 2026",
+      "stage": "First Stage",
+      "group": "Group J",
+      "venue": "Kansas City Stadium (Kansas City)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "ARG",
+        "name": "Argentina",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "ALG",
+        "name": "Algeria",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-17",
+      "date_label": "Wednesday 17 June 2026",
+      "stage": "First Stage",
+      "group": "Group J",
+      "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "AUT",
+        "name": "Austria",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "JOR",
+        "name": "Jordan",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-17",
+      "date_label": "Wednesday 17 June 2026",
+      "stage": "First Stage",
+      "group": "Group K",
+      "venue": "Houston Stadium (Houston)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "POR",
+        "name": "Portugal",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "COD",
+        "name": "Congo DR",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-17",
+      "date_label": "Wednesday 17 June 2026",
+      "stage": "First Stage",
+      "group": "Group L",
+      "venue": "Dallas Stadium (Dallas)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "ENG",
+        "name": "England",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "CRO",
+        "name": "Croatia",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-17",
+      "date_label": "Wednesday 17 June 2026",
+      "stage": "First Stage",
+      "group": "Group L",
+      "venue": "Toronto Stadium (Toronto)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "GHA",
+        "name": "Ghana",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "PAN",
+        "name": "Panama",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-18",
+      "date_label": "Thursday 18 June 2026",
+      "stage": "First Stage",
+      "group": "Group K",
+      "venue": "Mexico City Stadium (Mexico City)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "UZB",
+        "name": "Uzbekistan",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "COL",
+        "name": "Colombia",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-18",
+      "date_label": "Thursday 18 June 2026",
+      "stage": "First Stage",
+      "group": "Group A",
+      "venue": "Atlanta Stadium (Atlanta)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "CZE",
+        "name": "Czechia",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "RSA",
+        "name": "South Africa",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-18",
+      "date_label": "Thursday 18 June 2026",
+      "stage": "First Stage",
+      "group": "Group B",
+      "venue": "Los Angeles Stadium (Los Angeles)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "SUI",
+        "name": "Switzerland",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "BIH",
+        "name": "Bosnia and Herzegovina",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-18",
+      "date_label": "Thursday 18 June 2026",
+      "stage": "First Stage",
+      "group": "Group B",
+      "venue": "BC Place Vancouver (Vancouver)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "CAN",
+        "name": "Canada",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "QAT",
+        "name": "Qatar",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-19",
+      "date_label": "Friday 19 June 2026",
+      "stage": "First Stage",
+      "group": "Group A",
+      "venue": "Guadalajara Stadium (Guadalajara)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "MEX",
+        "name": "Mexico",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "KOR",
+        "name": "Korea Republic",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-19",
+      "date_label": "Friday 19 June 2026",
+      "stage": "First Stage",
+      "group": "Group D",
+      "venue": "Seattle Stadium (Seattle)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "USA",
+        "name": "USA",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "AUS",
+        "name": "Australia",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-19",
+      "date_label": "Friday 19 June 2026",
+      "stage": "First Stage",
+      "group": "Group C",
+      "venue": "Boston Stadium (Boston)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "SCO",
+        "name": "Scotland",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "MAR",
+        "name": "Morocco",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-20",
+      "date_label": "Saturday 20 June 2026",
+      "stage": "First Stage",
+      "group": "Group C",
+      "venue": "Philadelphia Stadium (Philadelphia)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "BRA",
+        "name": "Brazil",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "HAI",
+        "name": "Haiti",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-20",
+      "date_label": "Saturday 20 June 2026",
+      "stage": "First Stage",
+      "group": "Group D",
+      "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "TUR",
+        "name": "T\u00fcrkiye",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "PAR",
+        "name": "Paraguay",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-20",
+      "date_label": "Saturday 20 June 2026",
+      "stage": "First Stage",
+      "group": "Group F",
+      "venue": "Houston Stadium (Houston)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "NED",
+        "name": "Netherlands",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "SWE",
+        "name": "Sweden",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-20",
+      "date_label": "Saturday 20 June 2026",
+      "stage": "First Stage",
+      "group": "Group E",
+      "venue": "Toronto Stadium (Toronto)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "GER",
+        "name": "Germany",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "CIV",
+        "name": "C\u00f4te d'Ivoire",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-21",
+      "date_label": "Sunday 21 June 2026",
+      "stage": "First Stage",
+      "group": "Group E",
+      "venue": "Kansas City Stadium (Kansas City)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "ECU",
+        "name": "Ecuador",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "CUW",
+        "name": "Cura\u00e7ao",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-21",
+      "date_label": "Sunday 21 June 2026",
+      "stage": "First Stage",
+      "group": "Group F",
+      "venue": "Monterrey Stadium (Monterrey)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "TUN",
+        "name": "Tunisia",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "JPN",
+        "name": "Japan",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-21",
+      "date_label": "Sunday 21 June 2026",
+      "stage": "First Stage",
+      "group": "Group H",
+      "venue": "Atlanta Stadium (Atlanta)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "ESP",
+        "name": "Spain",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "KSA",
+        "name": "Saudi Arabia",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-21",
+      "date_label": "Sunday 21 June 2026",
+      "stage": "First Stage",
+      "group": "Group G",
+      "venue": "Los Angeles Stadium (Los Angeles)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "BEL",
+        "name": "Belgium",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "IRN",
+        "name": "IR Iran",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-21",
+      "date_label": "Sunday 21 June 2026",
+      "stage": "First Stage",
+      "group": "Group H",
+      "venue": "Miami Stadium (Miami)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "URU",
+        "name": "Uruguay",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "CPV",
+        "name": "Cabo Verde",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-22",
+      "date_label": "Monday 22 June 2026",
+      "stage": "First Stage",
+      "group": "Group G",
+      "venue": "BC Place Vancouver (Vancouver)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "NZL",
+        "name": "New Zealand",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "EGY",
+        "name": "Egypt",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-22",
+      "date_label": "Monday 22 June 2026",
+      "stage": "First Stage",
+      "group": "Group J",
+      "venue": "Dallas Stadium (Dallas)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "ARG",
+        "name": "Argentina",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "AUT",
+        "name": "Austria",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-22",
+      "date_label": "Monday 22 June 2026",
+      "stage": "First Stage",
+      "group": "Group I",
+      "venue": "Philadelphia Stadium (Philadelphia)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "FRA",
+        "name": "France",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "IRQ",
+        "name": "Iraq",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-23",
+      "date_label": "Tuesday 23 June 2026",
+      "stage": "First Stage",
+      "group": "Group I",
+      "venue": "New York/New Jersey Stadium (New Jersey)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "NOR",
+        "name": "Norway",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "SEN",
+        "name": "Senegal",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-23",
+      "date_label": "Tuesday 23 June 2026",
+      "stage": "First Stage",
+      "group": "Group J",
+      "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "JOR",
+        "name": "Jordan",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "ALG",
+        "name": "Algeria",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-23",
+      "date_label": "Tuesday 23 June 2026",
+      "stage": "First Stage",
+      "group": "Group K",
+      "venue": "Houston Stadium (Houston)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "POR",
+        "name": "Portugal",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "UZB",
+        "name": "Uzbekistan",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-23",
+      "date_label": "Tuesday 23 June 2026",
+      "stage": "First Stage",
+      "group": "Group L",
+      "venue": "Boston Stadium (Boston)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "ENG",
+        "name": "England",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "GHA",
+        "name": "Ghana",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-23",
+      "date_label": "Tuesday 23 June 2026",
+      "stage": "First Stage",
+      "group": "Group L",
+      "venue": "Toronto Stadium (Toronto)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "PAN",
+        "name": "Panama",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "CRO",
+        "name": "Croatia",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-24",
+      "date_label": "Wednesday 24 June 2026",
+      "stage": "First Stage",
+      "group": "Group K",
+      "venue": "Guadalajara Stadium (Guadalajara)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "COL",
+        "name": "Colombia",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "COD",
+        "name": "Congo DR",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-24",
+      "date_label": "Wednesday 24 June 2026",
+      "stage": "First Stage",
+      "group": "Group B",
+      "venue": "BC Place Vancouver (Vancouver)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "SUI",
+        "name": "Switzerland",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "CAN",
+        "name": "Canada",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-24",
+      "date_label": "Wednesday 24 June 2026",
+      "stage": "First Stage",
+      "group": "Group B",
+      "venue": "Seattle Stadium (Seattle)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "BIH",
+        "name": "Bosnia and Herzegovina",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "QAT",
+        "name": "Qatar",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-24",
+      "date_label": "Wednesday 24 June 2026",
+      "stage": "First Stage",
+      "group": "Group C",
+      "venue": "Miami Stadium (Miami)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "SCO",
+        "name": "Scotland",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "BRA",
+        "name": "Brazil",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-24",
+      "date_label": "Wednesday 24 June 2026",
+      "stage": "First Stage",
+      "group": "Group C",
+      "venue": "Atlanta Stadium (Atlanta)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "MAR",
+        "name": "Morocco",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "HAI",
+        "name": "Haiti",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-25",
+      "date_label": "Thursday 25 June 2026",
+      "stage": "First Stage",
+      "group": "Group A",
+      "venue": "Mexico City Stadium (Mexico City)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "CZE",
+        "name": "Czechia",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "MEX",
+        "name": "Mexico",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-25",
+      "date_label": "Thursday 25 June 2026",
+      "stage": "First Stage",
+      "group": "Group A",
+      "venue": "Monterrey Stadium (Monterrey)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "RSA",
+        "name": "South Africa",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "KOR",
+        "name": "Korea Republic",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-25",
+      "date_label": "Thursday 25 June 2026",
+      "stage": "First Stage",
+      "group": "Group E",
+      "venue": "Philadelphia Stadium (Philadelphia)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "CUW",
+        "name": "Cura\u00e7ao",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "CIV",
+        "name": "C\u00f4te d'Ivoire",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-25",
+      "date_label": "Thursday 25 June 2026",
+      "stage": "First Stage",
+      "group": "Group E",
+      "venue": "New York/New Jersey Stadium (New Jersey)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "ECU",
+        "name": "Ecuador",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "GER",
+        "name": "Germany",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-25",
+      "date_label": "Thursday 25 June 2026",
+      "stage": "First Stage",
+      "group": "Group F",
+      "venue": "Dallas Stadium (Dallas)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "JPN",
+        "name": "Japan",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "SWE",
+        "name": "Sweden",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-25",
+      "date_label": "Thursday 25 June 2026",
+      "stage": "First Stage",
+      "group": "Group F",
+      "venue": "Kansas City Stadium (Kansas City)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "TUN",
+        "name": "Tunisia",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "NED",
+        "name": "Netherlands",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-26",
+      "date_label": "Friday 26 June 2026",
+      "stage": "First Stage",
+      "group": "Group D",
+      "venue": "Los Angeles Stadium (Los Angeles)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "TUR",
+        "name": "T\u00fcrkiye",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "USA",
+        "name": "USA",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-26",
+      "date_label": "Friday 26 June 2026",
+      "stage": "First Stage",
+      "group": "Group D",
+      "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "PAR",
+        "name": "Paraguay",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "AUS",
+        "name": "Australia",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-26",
+      "date_label": "Friday 26 June 2026",
+      "stage": "First Stage",
+      "group": "Group I",
+      "venue": "Boston Stadium (Boston)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "NOR",
+        "name": "Norway",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "FRA",
+        "name": "France",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-26",
+      "date_label": "Friday 26 June 2026",
+      "stage": "First Stage",
+      "group": "Group I",
+      "venue": "Toronto Stadium (Toronto)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "SEN",
+        "name": "Senegal",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "IRQ",
+        "name": "Iraq",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-27",
+      "date_label": "Saturday 27 June 2026",
+      "stage": "First Stage",
+      "group": "Group H",
+      "venue": "Houston Stadium (Houston)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "CPV",
+        "name": "Cabo Verde",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "KSA",
+        "name": "Saudi Arabia",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-27",
+      "date_label": "Saturday 27 June 2026",
+      "stage": "First Stage",
+      "group": "Group H",
+      "venue": "Guadalajara Stadium (Guadalajara)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "URU",
+        "name": "Uruguay",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "ESP",
+        "name": "Spain",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-27",
+      "date_label": "Saturday 27 June 2026",
+      "stage": "First Stage",
+      "group": "Group G",
+      "venue": "Seattle Stadium (Seattle)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "EGY",
+        "name": "Egypt",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "IRN",
+        "name": "IR Iran",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-27",
+      "date_label": "Saturday 27 June 2026",
+      "stage": "First Stage",
+      "group": "Group G",
+      "venue": "BC Place Vancouver (Vancouver)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "NZL",
+        "name": "New Zealand",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "BEL",
+        "name": "Belgium",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-27",
+      "date_label": "Saturday 27 June 2026",
+      "stage": "First Stage",
+      "group": "Group L",
+      "venue": "New York/New Jersey Stadium (New Jersey)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "PAN",
+        "name": "Panama",
+        "player": "Mum",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "ENG",
+        "name": "England",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-27",
+      "date_label": "Saturday 27 June 2026",
+      "stage": "First Stage",
+      "group": "Group L",
+      "venue": "Philadelphia Stadium (Philadelphia)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "CRO",
+        "name": "Croatia",
+        "player": "Naomi",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "GHA",
+        "name": "Ghana",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-27",
+      "date_label": "Saturday 27 June 2026",
+      "stage": "First Stage",
+      "group": "Group K",
+      "venue": "Miami Stadium (Miami)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "COL",
+        "name": "Colombia",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "POR",
+        "name": "Portugal",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-27",
+      "date_label": "Saturday 27 June 2026",
+      "stage": "First Stage",
+      "group": "Group K",
+      "venue": "Atlanta Stadium (Atlanta)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "COD",
+        "name": "Congo DR",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "UZB",
+        "name": "Uzbekistan",
+        "player": "Dan",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "date_label": "Sunday 28 June 2026",
+      "stage": "First Stage",
+      "group": "Group J",
+      "venue": "Kansas City Stadium (Kansas City)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "ALG",
+        "name": "Algeria",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "AUT",
+        "name": "Austria",
+        "player": "Dad",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "date_label": "Sunday 28 June 2026",
+      "stage": "First Stage",
+      "group": "Group J",
+      "venue": "Dallas Stadium (Dallas)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "JOR",
+        "name": "Jordan",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "ARG",
+        "name": "Argentina",
+        "player": "Matthew",
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "date_label": "Sunday 28 June 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Los Angeles Stadium (Los Angeles)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "2A",
+        "name": "2A",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "2B",
+        "name": "2B",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "date_label": "Monday 29 June 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Houston Stadium (Houston)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "1C",
+        "name": "1C",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "2F",
+        "name": "2F",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "date_label": "Monday 29 June 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Boston Stadium (Boston)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "1E",
+        "name": "1E",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "3ABCDF",
+        "name": "3ABCDF",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "date_label": "Tuesday 30 June 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Monterrey Stadium (Monterrey)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "1F",
+        "name": "1F",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "2C",
+        "name": "2C",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "date_label": "Tuesday 30 June 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Dallas Stadium (Dallas)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "2E",
+        "name": "2E",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "2I",
+        "name": "2I",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "date_label": "Tuesday 30 June 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "New York/New Jersey Stadium (New Jersey)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "1I",
+        "name": "1I",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "3CDFGH",
+        "name": "3CDFGH",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-01",
+      "date_label": "Wednesday 01 July 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Mexico City Stadium (Mexico City)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "1A",
+        "name": "1A",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "3CEFHI",
+        "name": "3CEFHI",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-01",
+      "date_label": "Wednesday 01 July 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Atlanta Stadium (Atlanta)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "1L",
+        "name": "1L",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "3EHIJK",
+        "name": "3EHIJK",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-01",
+      "date_label": "Wednesday 01 July 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Seattle Stadium (Seattle)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "1G",
+        "name": "1G",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "3AEHIJ",
+        "name": "3AEHIJ",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-02",
+      "date_label": "Thursday 02 July 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "1D",
+        "name": "1D",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "3BEFIJ",
+        "name": "3BEFIJ",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-02",
+      "date_label": "Thursday 02 July 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Los Angeles Stadium (Los Angeles)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "1H",
+        "name": "1H",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "2J",
+        "name": "2J",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-02",
+      "date_label": "Thursday 02 July 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Toronto Stadium (Toronto)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "2K",
+        "name": "2K",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "2L",
+        "name": "2L",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-03",
+      "date_label": "Friday 03 July 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "BC Place Vancouver (Vancouver)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "1B",
+        "name": "1B",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "3EFGIJ",
+        "name": "3EFGIJ",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-03",
+      "date_label": "Friday 03 July 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Dallas Stadium (Dallas)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "2D",
+        "name": "2D",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "2G",
+        "name": "2G",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-03",
+      "date_label": "Friday 03 July 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Miami Stadium (Miami)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "1J",
+        "name": "1J",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "2H",
+        "name": "2H",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-04",
+      "date_label": "Saturday 04 July 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Kansas City Stadium (Kansas City)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "1K",
+        "name": "1K",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "3DEIJL",
+        "name": "3DEIJL",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-04",
+      "date_label": "Saturday 04 July 2026",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": "Houston Stadium (Houston)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "W73",
+        "name": "W73",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "W75",
+        "name": "W75",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-04",
+      "date_label": "Saturday 04 July 2026",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": "Philadelphia Stadium (Philadelphia)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "W74",
+        "name": "W74",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "W77",
+        "name": "W77",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-05",
+      "date_label": "Sunday 05 July 2026",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": "New York/New Jersey Stadium (New Jersey)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "W76",
+        "name": "W76",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "W78",
+        "name": "W78",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-06",
+      "date_label": "Monday 06 July 2026",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": "Mexico City Stadium (Mexico City)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "W79",
+        "name": "W79",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "W80",
+        "name": "W80",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-06",
+      "date_label": "Monday 06 July 2026",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": "Dallas Stadium (Dallas)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "W83",
+        "name": "W83",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "W84",
+        "name": "W84",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-07",
+      "date_label": "Tuesday 07 July 2026",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": "Seattle Stadium (Seattle)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "W81",
+        "name": "W81",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "W82",
+        "name": "W82",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-07",
+      "date_label": "Tuesday 07 July 2026",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": "Atlanta Stadium (Atlanta)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "W86",
+        "name": "W86",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "W88",
+        "name": "W88",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-07",
+      "date_label": "Tuesday 07 July 2026",
+      "stage": "Round of 16",
+      "group": null,
+      "venue": "BC Place Vancouver (Vancouver)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "W85",
+        "name": "W85",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "W87",
+        "name": "W87",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-09",
+      "date_label": "Thursday 09 July 2026",
+      "stage": "Quarter-final",
+      "group": null,
+      "venue": "Boston Stadium (Boston)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "W89",
+        "name": "W89",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "W90",
+        "name": "W90",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-10",
+      "date_label": "Friday 10 July 2026",
+      "stage": "Quarter-final",
+      "group": null,
+      "venue": "Los Angeles Stadium (Los Angeles)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "W93",
+        "name": "W93",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "W94",
+        "name": "W94",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-11",
+      "date_label": "Saturday 11 July 2026",
+      "stage": "Quarter-final",
+      "group": null,
+      "venue": "Miami Stadium (Miami)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "W91",
+        "name": "W91",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "W92",
+        "name": "W92",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-12",
+      "date_label": "Sunday 12 July 2026",
+      "stage": "Quarter-final",
+      "group": null,
+      "venue": "Kansas City Stadium (Kansas City)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "W95",
+        "name": "W95",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "W96",
+        "name": "W96",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-14",
+      "date_label": "Tuesday 14 July 2026",
+      "stage": "Semi-final",
+      "group": null,
+      "venue": "Dallas Stadium (Dallas)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "W97",
+        "name": "W97",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "W98",
+        "name": "W98",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-15",
+      "date_label": "Wednesday 15 July 2026",
+      "stage": "Semi-final",
+      "group": null,
+      "venue": "Atlanta Stadium (Atlanta)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "W99",
+        "name": "W99",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "W100",
+        "name": "W100",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-18",
+      "date_label": "Saturday 18 July 2026",
+      "stage": "Play-off for third place",
+      "group": null,
+      "venue": "Miami Stadium (Miami)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "RU101",
+        "name": "RU101",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "RU102",
+        "name": "RU102",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    },
+    {
+      "date": "2026-07-19",
+      "date_label": "Sunday 19 July 2026",
+      "stage": "Final",
+      "group": null,
+      "venue": "New York/New Jersey Stadium (New Jersey)",
+      "status": null,
+      "played": false,
+      "home": {
+        "abbr": "W101",
+        "name": "W101",
+        "player": null,
+        "score": null,
+        "winner": false
+      },
+      "away": {
+        "abbr": "W102",
+        "name": "W102",
+        "player": null,
+        "score": null,
+        "winner": false
+      }
+    }
+  ]
+}

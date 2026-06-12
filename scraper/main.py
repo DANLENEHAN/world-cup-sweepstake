@@ -13,11 +13,20 @@ from playwright.sync_api import sync_playwright
 URL = "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=GB&wtw-filter=ALL"
 
 OUTPUT_FILE = Path("site/data/scores.json")
+GAMES_OUTPUT_FILE = Path("site/data/games.json")
 
 GAME_SELECTOR = "div.match-row_matchRowContainer__NoCRI"
 TEAM_SELECTOR = "div.team-abbreviations_container__wWtDG.false.d-md-none"
 SCORE_SELECTOR = "span.match-row_score__wfcQP"
 STAGE_SELECTOR = "span.match-row_bottomLabel__ni63b"
+
+DATE_TITLE_SELECTOR = "div.matches-container_title__ATLsl"
+DATE_TITLE_CLASS = "matches-container_title__ATLsl"
+TEAM_CONTAINER_SELECTOR = "div.match-row_team__y5Rva"
+TEAM_ABBR_SELECTOR = "div.team-abbreviations_container__wWtDG span"
+TEAM_NAME_SELECTOR = "span.d-none.d-md-block"
+STATUS_LABEL_SELECTOR = "span.match-row_statusLabel__AiSA3"
+VENUE_SELECTOR = "div.match-row_stadiumCityLabels__zjXUq span"
 
 WINNER_CLASS_MARKER = "scoreWinner"
 
@@ -135,6 +144,9 @@ TEAM_TO_PLAYER = {
     for player, teams in PLAYER_TEAMS.items()
     for team in teams
 }
+
+
+ABBREVIATION_TO_TEAM = {abbr: team for team, abbr in TEAM_ABBREVIATIONS.items()}
 
 
 GROUP_STAGES = {
@@ -319,8 +331,10 @@ def calculate_scores(html: str) -> dict[str, int]:
         for team, points in team_points.items():
             player = TEAM_TO_PLAYER.get(team)
 
+            # Teams not picked by any player (e.g. Haiti, Curaçao, Jordan)
+            # score no points for anyone.
             if player is None:
-                raise ValueError(f"No player found for team: {team}")
+                continue
 
             player_scores[player] += points
 
@@ -330,28 +344,129 @@ def calculate_scores(html: str) -> dict[str, int]:
     }
 
 
-def write_scores(scores: dict[str, int]) -> None:
-    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+def parse_date_label(label: str) -> Optional[str]:
+    try:
+        return datetime.strptime(label, "%A %d %B %Y").date().isoformat()
+    except ValueError:
+        return None
 
-    payload = {
-        "updated_at": datetime.now(timezone.utc).isoformat(),
-        "scores": scores,
+
+def parse_team_side(team_el) -> Optional[dict]:
+    abbr_el = team_el.select_one(TEAM_ABBR_SELECTOR)
+
+    if abbr_el is None:
+        return None
+
+    abbr = abbr_el.get_text(strip=True)
+
+    name_el = team_el.select_one(TEAM_NAME_SELECTOR)
+    name = (
+        name_el.get_text(strip=True)
+        if name_el
+        else ABBREVIATION_TO_TEAM.get(abbr, abbr)
+    )
+
+    return {
+        "abbr": abbr,
+        "name": name,
+        "player": TEAM_TO_PLAYER.get(abbr),
     }
 
-    tmp_file = OUTPUT_FILE.with_suffix(".json.tmp")
+
+def collect_games(html: str) -> list[dict]:
+    soup = BeautifulSoup(html, "html.parser")
+
+    games = []
+    date_label = None
+    date = None
+
+    # Date headers and match rows are interleaved in document order, so each
+    # match belongs to the most recently seen date header.
+    for el in soup.select(f"{DATE_TITLE_SELECTOR}, {GAME_SELECTOR}"):
+        if DATE_TITLE_CLASS in el.get("class", []):
+            date_label = el.get_text(strip=True)
+            date = parse_date_label(date_label)
+            continue
+
+        team_els = el.select(TEAM_CONTAINER_SELECTOR)
+
+        if len(team_els) != 2:
+            continue
+
+        home = parse_team_side(team_els[0])
+        away = parse_team_side(team_els[1])
+
+        if home is None or away is None:
+            continue
+
+        score_elements = el.select(SCORE_SELECTOR)
+
+        if len(score_elements) == 2:
+            scores = [parse_score(s.get_text(strip=True)) for s in score_elements]
+            won = [
+                any(WINNER_CLASS_MARKER in cls for cls in s.get("class", []))
+                for s in score_elements
+            ]
+        else:
+            scores = [None, None]
+            won = [False, False]
+
+        home["score"], away["score"] = scores
+        home["winner"], away["winner"] = won
+
+        played = home["score"] is not None and away["score"] is not None
+
+        # If the page didn't flag a winner (no penalties), decide on score.
+        if played and not home["winner"] and not away["winner"]:
+            home["winner"] = home["score"] > away["score"]
+            away["winner"] = away["score"] > home["score"]
+
+        bottom_labels = [
+            b.get_text(strip=True)
+            for b in el.select(STAGE_SELECTOR)
+        ]
+        venue_parts = [v.get_text(strip=True) for v in el.select(VENUE_SELECTOR)]
+
+        status_el = el.select_one(STATUS_LABEL_SELECTOR)
+
+        games.append({
+            "date": date,
+            "date_label": date_label,
+            "stage": bottom_labels[0] if bottom_labels else None,
+            "group": bottom_labels[1] if len(bottom_labels) > 1 else None,
+            "venue": " ".join(venue_parts) if venue_parts else None,
+            "status": status_el.get_text(strip=True) if status_el else None,
+            "played": played,
+            "home": home,
+            "away": away,
+        })
+
+    return games
+
+
+def write_json(path: Path, payload: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+
+    tmp_file = path.with_suffix(".json.tmp")
 
     with tmp_file.open("w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2)
 
-    tmp_file.replace(OUTPUT_FILE)
+    tmp_file.replace(path)
 
 
 def main() -> None:
     html = scrape_html()
+    updated_at = datetime.now(timezone.utc).isoformat()
+
     scores = calculate_scores(html)
-    write_scores(scores)
+    write_json(OUTPUT_FILE, {"updated_at": updated_at, "scores": scores})
+
+    games = collect_games(html)
+    write_json(GAMES_OUTPUT_FILE, {"updated_at": updated_at, "games": games})
 
     print(json.dumps(scores, indent=2))
+    print(f"Wrote {len(games)} games to {GAMES_OUTPUT_FILE}")
 
 
 if __name__ == "__main__":

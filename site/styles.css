@@ -1,0 +1,145 @@
+:root {
+  /* FIFA 2026 host-nation trio: Canada red, Mexico green, USA blue */
+  --red: #e11d2e;
+  --green: #00a651;
+  --blue: #0c4da2;
+  --bg: #f4f7fb;
+  --bg-card: #ffffff;
+  --bg-card-soft: #f0f5fa;
+  --border: #dbe5f0;
+  --text: #15243a;
+  --text-muted: #5d7186;
+  --accent: var(--green);
+  --gold: #eab308;
+  --silver: #94a3b8;
+  --bronze: #c0833f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(900px 420px at 15% -5%, rgba(225, 29, 46, 0.09), transparent 65%),
+    radial-gradient(900px 420px at 85% -5%, rgba(12, 77, 162, 0.11), transparent 65%),
+    radial-gradient(700px 380px at 50% 0%, rgba(0, 166, 81, 0.08), transparent 70%),
+    var(--bg);
+  color: var(--text);
+  margin: 0;
+  min-height: 100vh;
+  padding: 2.5rem 1rem 4rem;
+  border-top: 6px solid;
+  border-image: linear-gradient(90deg, var(--red) 33%, var(--green) 33% 66%, var(--blue) 66%) 1;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+header .kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--red), var(--green), var(--blue));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h1 {
+  margin: 0.35rem 0 0.5rem;
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  line-height: 1.1;
+  color: var(--blue);
+}
+
+header p {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Tab navigation */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  width: fit-content;
+  margin: 0 auto 1.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.3rem;
+  box-shadow: 0 4px 14px rgba(21, 36, 58, 0.06);
+}
+
+.tab {
+  padding: 0.45rem 1.3rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.tab:not(.active):hover {
+  color: var(--text);
+}
+
+.tab.active {
+  background: linear-gradient(90deg, var(--green), var(--blue));
+  color: #ffffff;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 24px rgba(21, 36, 58, 0.08);
+}
+
+.card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+}
+
+/* Footer / links */
+.links {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--green), var(--blue));
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.75rem 1.4rem;
+  border-radius: 999px;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(12, 77, 162, 0.35);
+}
+
+#status {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin-top: 1.25rem;
+}
