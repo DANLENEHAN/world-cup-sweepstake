@@ -330,9 +330,8 @@
           main.className = "score";
           main.textContent = `${game.home.score} – ${game.away.score}`;
         } else {
-          // For unplayed games the status label carries the kickoff time.
           main.className = "kickoff";
-          main.textContent = game.status || "vs";
+          main.textContent = game.time || game.status || "vs";
         }
 
         centre.append(main);

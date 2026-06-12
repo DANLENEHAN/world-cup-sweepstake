@@ -26,6 +26,7 @@ TEAM_CONTAINER_SELECTOR = "div.match-row_team__y5Rva"
 TEAM_ABBR_SELECTOR = "div.team-abbreviations_container__wWtDG span"
 TEAM_NAME_SELECTOR = "span.d-none.d-md-block"
 STATUS_LABEL_SELECTOR = "span.match-row_statusLabel__AiSA3"
+MATCH_TIME_SELECTOR = "span.match-row_matchTime__9QJXJ"
 VENUE_SELECTOR = "div.match-row_stadiumCityLabels__zjXUq span"
 
 WINNER_CLASS_MARKER = "scoreWinner"
@@ -428,6 +429,7 @@ def collect_games(html: str) -> list[dict]:
         venue_parts = [v.get_text(strip=True) for v in el.select(VENUE_SELECTOR)]
 
         status_el = el.select_one(STATUS_LABEL_SELECTOR)
+        time_el = el.select_one(MATCH_TIME_SELECTOR)
 
         games.append({
             "date": date,
@@ -436,6 +438,7 @@ def collect_games(html: str) -> list[dict]:
             "group": bottom_labels[1] if len(bottom_labels) > 1 else None,
             "venue": " ".join(venue_parts) if venue_parts else None,
             "status": status_el.get_text(strip=True) if status_el else None,
+            "time": time_el.get_text(strip=True) if time_el else None,
             "played": played,
             "home": home,
             "away": away,

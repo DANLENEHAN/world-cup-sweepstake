@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-12T09:55:05.962352+00:00",
+  "updated_at": "2026-06-12T10:00:31.237543+00:00",
   "games": [
     {
       "date": "2026-06-11",
@@ -8,6 +8,7 @@
       "group": "Group A",
       "venue": "Mexico City Stadium (Mexico City)",
       "status": "FT",
+      "time": null,
       "played": true,
       "home": {
         "abbr": "MEX",
@@ -31,6 +32,7 @@
       "group": "Group A",
       "venue": "Guadalajara Stadium (Guadalajara)",
       "status": "FT",
+      "time": null,
       "played": true,
       "home": {
         "abbr": "KOR",
@@ -54,6 +56,7 @@
       "group": "Group B",
       "venue": "Toronto Stadium (Toronto)",
       "status": null,
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "CAN",
@@ -77,6 +80,7 @@
       "group": "Group D",
       "venue": "Los Angeles Stadium (Los Angeles)",
       "status": null,
+      "time": "02:00",
       "played": false,
       "home": {
         "abbr": "USA",
@@ -100,6 +104,7 @@
       "group": "Group B",
       "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
       "status": null,
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "QAT",
@@ -123,6 +128,7 @@
       "group": "Group C",
       "venue": "New York/New Jersey Stadium (New Jersey)",
       "status": null,
+      "time": "23:00",
       "played": false,
       "home": {
         "abbr": "BRA",
@@ -146,6 +152,7 @@
       "group": "Group C",
       "venue": "Boston Stadium (Boston)",
       "status": null,
+      "time": "02:00",
       "played": false,
       "home": {
         "abbr": "HAI",
@@ -169,6 +176,7 @@
       "group": "Group D",
       "venue": "BC Place Vancouver (Vancouver)",
       "status": null,
+      "time": "05:00",
       "played": false,
       "home": {
         "abbr": "AUS",
@@ -192,6 +200,7 @@
       "group": "Group E",
       "venue": "Houston Stadium (Houston)",
       "status": null,
+      "time": "18:00",
       "played": false,
       "home": {
         "abbr": "GER",
@@ -215,6 +224,7 @@
       "group": "Group F",
       "venue": "Dallas Stadium (Dallas)",
       "status": null,
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "NED",
@@ -232,12 +242,13 @@
       }
     },
     {
-      "date": "2026-06-14",
-      "date_label": "Sunday 14 June 2026",
+      "date": "2026-06-15",
+      "date_label": "Monday 15 June 2026",
       "stage": "First Stage",
       "group": "Group E",
       "venue": "Philadelphia Stadium (Philadelphia)",
       "status": null,
+      "time": "00:00",
       "played": false,
       "home": {
         "abbr": "CIV",
@@ -261,6 +272,7 @@
       "group": "Group F",
       "venue": "Monterrey Stadium (Monterrey)",
       "status": null,
+      "time": "03:00",
       "played": false,
       "home": {
         "abbr": "SWE",
@@ -284,6 +296,7 @@
       "group": "Group H",
       "venue": "Atlanta Stadium (Atlanta)",
       "status": null,
+      "time": "17:00",
       "played": false,
       "home": {
         "abbr": "ESP",
@@ -307,6 +320,7 @@
       "group": "Group G",
       "venue": "Seattle Stadium (Seattle)",
       "status": null,
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "BEL",
@@ -330,6 +344,7 @@
       "group": "Group H",
       "venue": "Miami Stadium (Miami)",
       "status": null,
+      "time": "23:00",
       "played": false,
       "home": {
         "abbr": "KSA",
@@ -353,6 +368,7 @@
       "group": "Group G",
       "venue": "Los Angeles Stadium (Los Angeles)",
       "status": null,
+      "time": "02:00",
       "played": false,
       "home": {
         "abbr": "IRN",
@@ -376,6 +392,7 @@
       "group": "Group I",
       "venue": "New York/New Jersey Stadium (New Jersey)",
       "status": null,
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "FRA",
@@ -399,6 +416,7 @@
       "group": "Group I",
       "venue": "Boston Stadium (Boston)",
       "status": null,
+      "time": "23:00",
       "played": false,
       "home": {
         "abbr": "IRQ",
@@ -422,6 +440,7 @@
       "group": "Group J",
       "venue": "Kansas City Stadium (Kansas City)",
       "status": null,
+      "time": "02:00",
       "played": false,
       "home": {
         "abbr": "ARG",
@@ -445,6 +464,7 @@
       "group": "Group J",
       "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
       "status": null,
+      "time": "05:00",
       "played": false,
       "home": {
         "abbr": "AUT",
@@ -468,6 +488,7 @@
       "group": "Group K",
       "venue": "Houston Stadium (Houston)",
       "status": null,
+      "time": "18:00",
       "played": false,
       "home": {
         "abbr": "POR",
@@ -491,6 +512,7 @@
       "group": "Group L",
       "venue": "Dallas Stadium (Dallas)",
       "status": null,
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "ENG",
@@ -508,12 +530,13 @@
       }
     },
     {
-      "date": "2026-06-17",
-      "date_label": "Wednesday 17 June 2026",
+      "date": "2026-06-18",
+      "date_label": "Thursday 18 June 2026",
       "stage": "First Stage",
       "group": "Group L",
       "venue": "Toronto Stadium (Toronto)",
       "status": null,
+      "time": "00:00",
       "played": false,
       "home": {
         "abbr": "GHA",
@@ -537,6 +560,7 @@
       "group": "Group K",
       "venue": "Mexico City Stadium (Mexico City)",
       "status": null,
+      "time": "03:00",
       "played": false,
       "home": {
         "abbr": "UZB",
@@ -560,6 +584,7 @@
       "group": "Group A",
       "venue": "Atlanta Stadium (Atlanta)",
       "status": null,
+      "time": "17:00",
       "played": false,
       "home": {
         "abbr": "CZE",
@@ -583,6 +608,7 @@
       "group": "Group B",
       "venue": "Los Angeles Stadium (Los Angeles)",
       "status": null,
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "SUI",
@@ -606,6 +632,7 @@
       "group": "Group B",
       "venue": "BC Place Vancouver (Vancouver)",
       "status": null,
+      "time": "23:00",
       "played": false,
       "home": {
         "abbr": "CAN",
@@ -629,6 +656,7 @@
       "group": "Group A",
       "venue": "Guadalajara Stadium (Guadalajara)",
       "status": null,
+      "time": "02:00",
       "played": false,
       "home": {
         "abbr": "MEX",
@@ -652,6 +680,7 @@
       "group": "Group D",
       "venue": "Seattle Stadium (Seattle)",
       "status": null,
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "USA",
@@ -675,6 +704,7 @@
       "group": "Group C",
       "venue": "Boston Stadium (Boston)",
       "status": null,
+      "time": "23:00",
       "played": false,
       "home": {
         "abbr": "SCO",
@@ -698,6 +728,7 @@
       "group": "Group C",
       "venue": "Philadelphia Stadium (Philadelphia)",
       "status": null,
+      "time": "01:30",
       "played": false,
       "home": {
         "abbr": "BRA",
@@ -721,6 +752,7 @@
       "group": "Group D",
       "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
       "status": null,
+      "time": "04:00",
       "played": false,
       "home": {
         "abbr": "TUR",
@@ -744,6 +776,7 @@
       "group": "Group F",
       "venue": "Houston Stadium (Houston)",
       "status": null,
+      "time": "18:00",
       "played": false,
       "home": {
         "abbr": "NED",
@@ -767,6 +800,7 @@
       "group": "Group E",
       "venue": "Toronto Stadium (Toronto)",
       "status": null,
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "GER",
@@ -790,6 +824,7 @@
       "group": "Group E",
       "venue": "Kansas City Stadium (Kansas City)",
       "status": null,
+      "time": "01:00",
       "played": false,
       "home": {
         "abbr": "ECU",
@@ -813,6 +848,7 @@
       "group": "Group F",
       "venue": "Monterrey Stadium (Monterrey)",
       "status": null,
+      "time": "05:00",
       "played": false,
       "home": {
         "abbr": "TUN",
@@ -836,6 +872,7 @@
       "group": "Group H",
       "venue": "Atlanta Stadium (Atlanta)",
       "status": null,
+      "time": "17:00",
       "played": false,
       "home": {
         "abbr": "ESP",
@@ -859,6 +896,7 @@
       "group": "Group G",
       "venue": "Los Angeles Stadium (Los Angeles)",
       "status": null,
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "BEL",
@@ -882,6 +920,7 @@
       "group": "Group H",
       "venue": "Miami Stadium (Miami)",
       "status": null,
+      "time": "23:00",
       "played": false,
       "home": {
         "abbr": "URU",
@@ -905,6 +944,7 @@
       "group": "Group G",
       "venue": "BC Place Vancouver (Vancouver)",
       "status": null,
+      "time": "02:00",
       "played": false,
       "home": {
         "abbr": "NZL",
@@ -928,6 +968,7 @@
       "group": "Group J",
       "venue": "Dallas Stadium (Dallas)",
       "status": null,
+      "time": "18:00",
       "played": false,
       "home": {
         "abbr": "ARG",
@@ -951,6 +992,7 @@
       "group": "Group I",
       "venue": "Philadelphia Stadium (Philadelphia)",
       "status": null,
+      "time": "22:00",
       "played": false,
       "home": {
         "abbr": "FRA",
@@ -974,6 +1016,7 @@
       "group": "Group I",
       "venue": "New York/New Jersey Stadium (New Jersey)",
       "status": null,
+      "time": "01:00",
       "played": false,
       "home": {
         "abbr": "NOR",
@@ -997,6 +1040,7 @@
       "group": "Group J",
       "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
       "status": null,
+      "time": "04:00",
       "played": false,
       "home": {
         "abbr": "JOR",
@@ -1020,6 +1064,7 @@
       "group": "Group K",
       "venue": "Houston Stadium (Houston)",
       "status": null,
+      "time": "18:00",
       "played": false,
       "home": {
         "abbr": "POR",
@@ -1043,6 +1088,7 @@
       "group": "Group L",
       "venue": "Boston Stadium (Boston)",
       "status": null,
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "ENG",
@@ -1060,12 +1106,13 @@
       }
     },
     {
-      "date": "2026-06-23",
-      "date_label": "Tuesday 23 June 2026",
+      "date": "2026-06-24",
+      "date_label": "Wednesday 24 June 2026",
       "stage": "First Stage",
       "group": "Group L",
       "venue": "Toronto Stadium (Toronto)",
       "status": null,
+      "time": "00:00",
       "played": false,
       "home": {
         "abbr": "PAN",
@@ -1089,6 +1136,7 @@
       "group": "Group K",
       "venue": "Guadalajara Stadium (Guadalajara)",
       "status": null,
+      "time": "03:00",
       "played": false,
       "home": {
         "abbr": "COL",
@@ -1112,6 +1160,7 @@
       "group": "Group B",
       "venue": "BC Place Vancouver (Vancouver)",
       "status": null,
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "SUI",
@@ -1135,6 +1184,7 @@
       "group": "Group B",
       "venue": "Seattle Stadium (Seattle)",
       "status": null,
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "BIH",
@@ -1158,6 +1208,7 @@
       "group": "Group C",
       "venue": "Miami Stadium (Miami)",
       "status": null,
+      "time": "23:00",
       "played": false,
       "home": {
         "abbr": "SCO",
@@ -1181,6 +1232,7 @@
       "group": "Group C",
       "venue": "Atlanta Stadium (Atlanta)",
       "status": null,
+      "time": "23:00",
       "played": false,
       "home": {
         "abbr": "MAR",
@@ -1204,6 +1256,7 @@
       "group": "Group A",
       "venue": "Mexico City Stadium (Mexico City)",
       "status": null,
+      "time": "02:00",
       "played": false,
       "home": {
         "abbr": "CZE",
@@ -1227,6 +1280,7 @@
       "group": "Group A",
       "venue": "Monterrey Stadium (Monterrey)",
       "status": null,
+      "time": "02:00",
       "played": false,
       "home": {
         "abbr": "RSA",
@@ -1250,6 +1304,7 @@
       "group": "Group E",
       "venue": "Philadelphia Stadium (Philadelphia)",
       "status": null,
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "CUW",
@@ -1273,6 +1328,7 @@
       "group": "Group E",
       "venue": "New York/New Jersey Stadium (New Jersey)",
       "status": null,
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "ECU",
@@ -1290,12 +1346,13 @@
       }
     },
     {
-      "date": "2026-06-25",
-      "date_label": "Thursday 25 June 2026",
+      "date": "2026-06-26",
+      "date_label": "Friday 26 June 2026",
       "stage": "First Stage",
       "group": "Group F",
       "venue": "Dallas Stadium (Dallas)",
       "status": null,
+      "time": "00:00",
       "played": false,
       "home": {
         "abbr": "JPN",
@@ -1313,12 +1370,13 @@
       }
     },
     {
-      "date": "2026-06-25",
-      "date_label": "Thursday 25 June 2026",
+      "date": "2026-06-26",
+      "date_label": "Friday 26 June 2026",
       "stage": "First Stage",
       "group": "Group F",
       "venue": "Kansas City Stadium (Kansas City)",
       "status": null,
+      "time": "00:00",
       "played": false,
       "home": {
         "abbr": "TUN",
@@ -1342,6 +1400,7 @@
       "group": "Group D",
       "venue": "Los Angeles Stadium (Los Angeles)",
       "status": null,
+      "time": "03:00",
       "played": false,
       "home": {
         "abbr": "TUR",
@@ -1365,6 +1424,7 @@
       "group": "Group D",
       "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
       "status": null,
+      "time": "03:00",
       "played": false,
       "home": {
         "abbr": "PAR",
@@ -1388,6 +1448,7 @@
       "group": "Group I",
       "venue": "Boston Stadium (Boston)",
       "status": null,
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "NOR",
@@ -1411,6 +1472,7 @@
       "group": "Group I",
       "venue": "Toronto Stadium (Toronto)",
       "status": null,
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "SEN",
@@ -1434,6 +1496,7 @@
       "group": "Group H",
       "venue": "Houston Stadium (Houston)",
       "status": null,
+      "time": "01:00",
       "played": false,
       "home": {
         "abbr": "CPV",
@@ -1457,6 +1520,7 @@
       "group": "Group H",
       "venue": "Guadalajara Stadium (Guadalajara)",
       "status": null,
+      "time": "01:00",
       "played": false,
       "home": {
         "abbr": "URU",
@@ -1480,6 +1544,7 @@
       "group": "Group G",
       "venue": "Seattle Stadium (Seattle)",
       "status": null,
+      "time": "04:00",
       "played": false,
       "home": {
         "abbr": "EGY",
@@ -1503,6 +1568,7 @@
       "group": "Group G",
       "venue": "BC Place Vancouver (Vancouver)",
       "status": null,
+      "time": "04:00",
       "played": false,
       "home": {
         "abbr": "NZL",
@@ -1526,6 +1592,7 @@
       "group": "Group L",
       "venue": "New York/New Jersey Stadium (New Jersey)",
       "status": null,
+      "time": "22:00",
       "played": false,
       "home": {
         "abbr": "PAN",
@@ -1549,6 +1616,7 @@
       "group": "Group L",
       "venue": "Philadelphia Stadium (Philadelphia)",
       "status": null,
+      "time": "22:00",
       "played": false,
       "home": {
         "abbr": "CRO",
@@ -1566,12 +1634,13 @@
       }
     },
     {
-      "date": "2026-06-27",
-      "date_label": "Saturday 27 June 2026",
+      "date": "2026-06-28",
+      "date_label": "Sunday 28 June 2026",
       "stage": "First Stage",
       "group": "Group K",
       "venue": "Miami Stadium (Miami)",
       "status": null,
+      "time": "00:30",
       "played": false,
       "home": {
         "abbr": "COL",
@@ -1589,12 +1658,13 @@
       }
     },
     {
-      "date": "2026-06-27",
-      "date_label": "Saturday 27 June 2026",
+      "date": "2026-06-28",
+      "date_label": "Sunday 28 June 2026",
       "stage": "First Stage",
       "group": "Group K",
       "venue": "Atlanta Stadium (Atlanta)",
       "status": null,
+      "time": "00:30",
       "played": false,
       "home": {
         "abbr": "COD",
@@ -1618,6 +1688,7 @@
       "group": "Group J",
       "venue": "Kansas City Stadium (Kansas City)",
       "status": null,
+      "time": "03:00",
       "played": false,
       "home": {
         "abbr": "ALG",
@@ -1641,6 +1712,7 @@
       "group": "Group J",
       "venue": "Dallas Stadium (Dallas)",
       "status": null,
+      "time": "03:00",
       "played": false,
       "home": {
         "abbr": "JOR",
@@ -1664,6 +1736,7 @@
       "group": null,
       "venue": "Los Angeles Stadium (Los Angeles)",
       "status": null,
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "2A",
@@ -1687,6 +1760,7 @@
       "group": null,
       "venue": "Houston Stadium (Houston)",
       "status": null,
+      "time": "18:00",
       "played": false,
       "home": {
         "abbr": "1C",
@@ -1710,6 +1784,7 @@
       "group": null,
       "venue": "Boston Stadium (Boston)",
       "status": null,
+      "time": "21:30",
       "played": false,
       "home": {
         "abbr": "1E",
@@ -1733,6 +1808,7 @@
       "group": null,
       "venue": "Monterrey Stadium (Monterrey)",
       "status": null,
+      "time": "02:00",
       "played": false,
       "home": {
         "abbr": "1F",
@@ -1756,6 +1832,7 @@
       "group": null,
       "venue": "Dallas Stadium (Dallas)",
       "status": null,
+      "time": "18:00",
       "played": false,
       "home": {
         "abbr": "2E",
@@ -1779,6 +1856,7 @@
       "group": null,
       "venue": "New York/New Jersey Stadium (New Jersey)",
       "status": null,
+      "time": "22:00",
       "played": false,
       "home": {
         "abbr": "1I",
@@ -1802,6 +1880,7 @@
       "group": null,
       "venue": "Mexico City Stadium (Mexico City)",
       "status": null,
+      "time": "02:00",
       "played": false,
       "home": {
         "abbr": "1A",
@@ -1825,6 +1904,7 @@
       "group": null,
       "venue": "Atlanta Stadium (Atlanta)",
       "status": null,
+      "time": "17:00",
       "played": false,
       "home": {
         "abbr": "1L",
@@ -1848,6 +1928,7 @@
       "group": null,
       "venue": "Seattle Stadium (Seattle)",
       "status": null,
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "1G",
@@ -1871,6 +1952,7 @@
       "group": null,
       "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
       "status": null,
+      "time": "01:00",
       "played": false,
       "home": {
         "abbr": "1D",
@@ -1894,6 +1976,7 @@
       "group": null,
       "venue": "Los Angeles Stadium (Los Angeles)",
       "status": null,
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "1H",
@@ -1911,12 +1994,13 @@
       }
     },
     {
-      "date": "2026-07-02",
-      "date_label": "Thursday 02 July 2026",
+      "date": "2026-07-03",
+      "date_label": "Friday 03 July 2026",
       "stage": "Round of 32",
       "group": null,
       "venue": "Toronto Stadium (Toronto)",
       "status": null,
+      "time": "00:00",
       "played": false,
       "home": {
         "abbr": "2K",
@@ -1940,6 +2024,7 @@
       "group": null,
       "venue": "BC Place Vancouver (Vancouver)",
       "status": null,
+      "time": "04:00",
       "played": false,
       "home": {
         "abbr": "1B",
@@ -1963,6 +2048,7 @@
       "group": null,
       "venue": "Dallas Stadium (Dallas)",
       "status": null,
+      "time": "19:00",
       "played": false,
       "home": {
         "abbr": "2D",
@@ -1986,6 +2072,7 @@
       "group": null,
       "venue": "Miami Stadium (Miami)",
       "status": null,
+      "time": "23:00",
       "played": false,
       "home": {
         "abbr": "1J",
@@ -2009,6 +2096,7 @@
       "group": null,
       "venue": "Kansas City Stadium (Kansas City)",
       "status": null,
+      "time": "02:30",
       "played": false,
       "home": {
         "abbr": "1K",
@@ -2032,6 +2120,7 @@
       "group": null,
       "venue": "Houston Stadium (Houston)",
       "status": null,
+      "time": "18:00",
       "played": false,
       "home": {
         "abbr": "W73",
@@ -2055,6 +2144,7 @@
       "group": null,
       "venue": "Philadelphia Stadium (Philadelphia)",
       "status": null,
+      "time": "22:00",
       "played": false,
       "home": {
         "abbr": "W74",
@@ -2078,6 +2168,7 @@
       "group": null,
       "venue": "New York/New Jersey Stadium (New Jersey)",
       "status": null,
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "W76",
@@ -2101,6 +2192,7 @@
       "group": null,
       "venue": "Mexico City Stadium (Mexico City)",
       "status": null,
+      "time": "01:00",
       "played": false,
       "home": {
         "abbr": "W79",
@@ -2124,6 +2216,7 @@
       "group": null,
       "venue": "Dallas Stadium (Dallas)",
       "status": null,
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "W83",
@@ -2147,6 +2240,7 @@
       "group": null,
       "venue": "Seattle Stadium (Seattle)",
       "status": null,
+      "time": "01:00",
       "played": false,
       "home": {
         "abbr": "W81",
@@ -2170,6 +2264,7 @@
       "group": null,
       "venue": "Atlanta Stadium (Atlanta)",
       "status": null,
+      "time": "17:00",
       "played": false,
       "home": {
         "abbr": "W86",
@@ -2193,6 +2288,7 @@
       "group": null,
       "venue": "BC Place Vancouver (Vancouver)",
       "status": null,
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "W85",
@@ -2216,6 +2312,7 @@
       "group": null,
       "venue": "Boston Stadium (Boston)",
       "status": null,
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "W89",
@@ -2239,6 +2336,7 @@
       "group": null,
       "venue": "Los Angeles Stadium (Los Angeles)",
       "status": null,
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "W93",
@@ -2262,6 +2360,7 @@
       "group": null,
       "venue": "Miami Stadium (Miami)",
       "status": null,
+      "time": "22:00",
       "played": false,
       "home": {
         "abbr": "W91",
@@ -2285,6 +2384,7 @@
       "group": null,
       "venue": "Kansas City Stadium (Kansas City)",
       "status": null,
+      "time": "02:00",
       "played": false,
       "home": {
         "abbr": "W95",
@@ -2308,6 +2408,7 @@
       "group": null,
       "venue": "Dallas Stadium (Dallas)",
       "status": null,
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "W97",
@@ -2331,6 +2432,7 @@
       "group": null,
       "venue": "Atlanta Stadium (Atlanta)",
       "status": null,
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "W99",
@@ -2354,6 +2456,7 @@
       "group": null,
       "venue": "Miami Stadium (Miami)",
       "status": null,
+      "time": "22:00",
       "played": false,
       "home": {
         "abbr": "RU101",
@@ -2377,6 +2480,7 @@
       "group": null,
       "venue": "New York/New Jersey Stadium (New Jersey)",
       "status": null,
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "W101",
