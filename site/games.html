@@ -327,15 +327,13 @@
       }
 
       // A game runs ~3 hours covering stoppage time, half-time, extra time
-      // and penalties. The scraper captures kickoff times in Europe/London
-      // time, which is BST (UTC+1) for the whole June/July 2026 tournament.
+      // and penalties.
       const LIVE_WINDOW_MS = 3 * 60 * 60 * 1000;
-      const LONDON_OFFSET = "+01:00";
 
       function getKickoff(game) {
-        if (!game.date || !game.time) return null;
+        if (!game.kickoff) return null;
 
-        const kickoff = new Date(`${game.date}T${game.time}:00${LONDON_OFFSET}`);
+        const kickoff = new Date(game.kickoff);
         return Number.isNaN(kickoff.getTime()) ? null : kickoff;
       }
 

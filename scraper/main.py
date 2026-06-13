@@ -2,9 +2,10 @@
 
 import json
 from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import datetime, time, timezone
 from pathlib import Path
 from typing import Optional
+from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
@@ -28,6 +29,10 @@ TEAM_NAME_SELECTOR = "span.d-none.d-md-block"
 STATUS_LABEL_SELECTOR = "span.match-row_statusLabel__AiSA3"
 MATCH_TIME_SELECTOR = "span.match-row_matchTime__9QJXJ"
 VENUE_SELECTOR = "div.match-row_stadiumCityLabels__zjXUq span"
+
+# The FIFA page renders kickoff times in UTC regardless of locale.
+SOURCE_TIME_ZONE = timezone.utc
+DISPLAY_TIME_ZONE = ZoneInfo("Europe/London")
 
 WINNER_CLASS_MARKER = "scoreWinner"
 FULL_TIME_CLASS_MARKER = "fullTime"
@@ -265,8 +270,7 @@ def scrape_html() -> str:
             viewport={
                 "width": 1440,
                 "height": 1200,
-            },
-            timezone_id="Europe/London",
+            }
         )
 
         print(f"Navigating to {URL}...", flush=True)
@@ -354,6 +358,27 @@ def parse_date_label(label: str) -> Optional[str]:
         return None
 
 
+def parse_kickoff(date: Optional[str], raw_time: Optional[str]) -> tuple[Optional[str], Optional[str]]:
+    """Combine a match date with its raw (UTC) kickoff time.
+
+    Returns a tuple of (kickoff ISO timestamp in UTC, kickoff time formatted
+    for display in Europe/London).
+    """
+    if not date or not raw_time:
+        return None, None
+
+    try:
+        match_date = datetime.strptime(date, "%Y-%m-%d").date()
+        hour, minute = (int(part) for part in raw_time.split(":"))
+        kickoff_utc = datetime.combine(match_date, time(hour, minute), tzinfo=SOURCE_TIME_ZONE)
+    except ValueError:
+        return None, None
+
+    kickoff_london = kickoff_utc.astimezone(DISPLAY_TIME_ZONE)
+
+    return kickoff_utc.isoformat(), kickoff_london.strftime("%H:%M")
+
+
 def parse_team_side(team_el) -> Optional[dict]:
     abbr_el = team_el.select_one(TEAM_ABBR_SELECTOR)
 
@@ -438,6 +463,8 @@ def collect_games(html: str) -> list[dict]:
         venue_parts = [v.get_text(strip=True) for v in el.select(VENUE_SELECTOR)]
 
         time_el = el.select_one(MATCH_TIME_SELECTOR)
+        raw_time = time_el.get_text(strip=True) if time_el else None
+        kickoff, display_time = parse_kickoff(date, raw_time)
 
         games.append({
             "date": date,
@@ -446,7 +473,8 @@ def collect_games(html: str) -> list[dict]:
             "group": bottom_labels[1] if len(bottom_labels) > 1 else None,
             "venue": " ".join(venue_parts) if venue_parts else None,
             "status": status_el.get_text(strip=True) if status_el else None,
-            "time": time_el.get_text(strip=True) if time_el else None,
+            "kickoff": kickoff,
+            "time": display_time,
             "played": played,
             "home": home,
             "away": away,
