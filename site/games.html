@@ -251,7 +251,7 @@
           renderGames();
 
           const updated = new Date(data.updated_at);
-          status.textContent = `Games last updated: ${updated.toLocaleString()}`;
+          status.textContent = `Games last updated: ${formatLondonTime(updated)}`;
         } catch (error) {
           status.textContent = `Unable to load games: ${error.message}`;
         }
@@ -282,7 +282,7 @@
         }
 
         const now = Date.now();
-        const todayIso = toLocalDateString(new Date(now));
+        const todayIso = londonDateString(new Date(now));
 
         let currentLabel = null;
         let section = null;
@@ -314,28 +314,41 @@
         });
       }
 
-      function toLocalDateString(date) {
-        const year = date.getFullYear();
-        const month = String(date.getMonth() + 1).padStart(2, "0");
-        const day = String(date.getDate()).padStart(2, "0");
-        return `${year}-${month}-${day}`;
+      function formatLondonTime(date) {
+        return date.toLocaleString("en-GB", {
+          timeZone: "Europe/London",
+          dateStyle: "medium",
+          timeStyle: "short",
+        });
+      }
+
+      function londonDateString(date) {
+        return date.toLocaleDateString("en-CA", { timeZone: "Europe/London" });
       }
 
       // A game runs ~3 hours covering stoppage time, half-time, extra time
-      // and penalties. The FIFA page is localised to GB time, which matches
-      // the family's timezone, so the kickoff string can be read as local
-      // time directly — no timezone conversion needed.
+      // and penalties. The scraper captures kickoff times in Europe/London
+      // time, which is BST (UTC+1) for the whole June/July 2026 tournament.
       const LIVE_WINDOW_MS = 3 * 60 * 60 * 1000;
+      const LONDON_OFFSET = "+01:00";
 
       function getKickoff(game) {
         if (!game.date || !game.time) return null;
 
-        const kickoff = new Date(`${game.date}T${game.time}:00`);
+        const kickoff = new Date(`${game.date}T${game.time}:00${LONDON_OFFSET}`);
         return Number.isNaN(kickoff.getTime()) ? null : kickoff;
+      }
+
+      function hasScore(game) {
+        return game.home.score !== null && game.away.score !== null;
       }
 
       function isLive(game, now) {
         if (game.played) return false;
+
+        // FIFA stops reporting a kickoff time once a match starts, so a
+        // posted score is the most reliable sign a game is in progress.
+        if (hasScore(game)) return true;
 
         const kickoff = getKickoff(game);
         if (!kickoff) return false;

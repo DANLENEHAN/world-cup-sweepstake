@@ -265,7 +265,8 @@ def scrape_html() -> str:
             viewport={
                 "width": 1440,
                 "height": 1200,
-            }
+            },
+            timezone_id="Europe/London",
         )
 
         print(f"Navigating to {URL}...", flush=True)

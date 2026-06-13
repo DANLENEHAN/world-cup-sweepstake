@@ -170,6 +170,14 @@
 
       const RANK_CLASSES = ["first", "second", "third"];
 
+      function formatLondonTime(date) {
+        return date.toLocaleString("en-GB", {
+          timeZone: "Europe/London",
+          dateStyle: "medium",
+          timeStyle: "short",
+        });
+      }
+
       async function loadScores() {
         const status = document.getElementById("status");
 
@@ -184,7 +192,7 @@
           renderScores(data.scores);
 
           const updated = new Date(data.updated_at);
-          status.textContent = `Scores last updated: ${updated.toLocaleString()}`;
+          status.textContent = `Scores last updated: ${formatLondonTime(updated)}`;
         } catch (error) {
           status.textContent = `Unable to load scores: ${error.message}`;
         }
