@@ -5,7 +5,7 @@ ENV PYTHONUNBUFFERED=1 \
     POETRY_VIRTUALENVS_IN_PROJECT=true
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends cron \
+    && apt-get install -y --no-install-recommends cron tzdata \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip install --no-cache-dir poetry
