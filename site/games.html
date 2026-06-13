@@ -159,6 +159,38 @@
         color: var(--text-muted);
       }
 
+      .match.live {
+        background: linear-gradient(90deg, rgba(225, 29, 46, 0.06), transparent 65%);
+        border-radius: 10px;
+      }
+
+      .state.live {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+        color: var(--red);
+      }
+
+      .state.live::before {
+        content: "";
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background: var(--red);
+        animation: live-pulse 1.4s ease-in-out infinite;
+      }
+
+      @keyframes live-pulse {
+        0%, 100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.4;
+          transform: scale(0.7);
+        }
+      }
+
       .empty {
         text-align: center;
         color: var(--text-muted);
@@ -249,7 +281,8 @@
           return;
         }
 
-        const todayIso = new Date().toISOString().slice(0, 10);
+        const now = Date.now();
+        const todayIso = toLocalDateString(new Date(now));
 
         let currentLabel = null;
         let section = null;
@@ -277,17 +310,49 @@
             container.append(section);
           }
 
-          section.append(renderMatch(game));
+          section.append(renderMatch(game, now));
         });
       }
 
-      function renderMatch(game) {
+      function toLocalDateString(date) {
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, "0");
+        const day = String(date.getDate()).padStart(2, "0");
+        return `${year}-${month}-${day}`;
+      }
+
+      // A game runs ~3 hours covering stoppage time, half-time, extra time
+      // and penalties. The FIFA page is localised to GB time, which matches
+      // the family's timezone, so the kickoff string can be read as local
+      // time directly — no timezone conversion needed.
+      const LIVE_WINDOW_MS = 3 * 60 * 60 * 1000;
+
+      function getKickoff(game) {
+        if (!game.date || !game.time) return null;
+
+        const kickoff = new Date(`${game.date}T${game.time}:00`);
+        return Number.isNaN(kickoff.getTime()) ? null : kickoff;
+      }
+
+      function isLive(game, now) {
+        if (game.played) return false;
+
+        const kickoff = getKickoff(game);
+        if (!kickoff) return false;
+
+        const elapsed = now - kickoff.getTime();
+        return elapsed >= 0 && elapsed < LIVE_WINDOW_MS;
+      }
+
+      function renderMatch(game, now) {
+        const live = isLive(game, now);
+
         const match = document.createElement("div");
-        match.className = game.played ? "match played" : "match";
+        match.className = game.played ? "match played" : live ? "match live" : "match";
 
         match.append(
           renderSide(game, game.home, "home"),
-          renderCentre(game),
+          renderCentre(game, live),
           renderSide(game, game.away, "away"),
           renderMeta(game)
         );
@@ -320,15 +385,15 @@
         return side;
       }
 
-      function renderCentre(game) {
+      function renderCentre(game, live) {
         const centre = document.createElement("div");
         centre.className = "centre";
 
         const main = document.createElement("div");
 
-        if (game.played) {
+        if (game.played || live) {
           main.className = "score";
-          main.textContent = `${game.home.score} – ${game.away.score}`;
+          main.textContent = `${game.home.score ?? 0} – ${game.away.score ?? 0}`;
         } else {
           main.className = "kickoff";
           main.textContent = game.time || game.status || "vs";
@@ -336,7 +401,12 @@
 
         centre.append(main);
 
-        if (game.played && game.status) {
+        if (live) {
+          const state = document.createElement("div");
+          state.className = "state live";
+          state.textContent = "Live";
+          centre.append(state);
+        } else if (game.played && game.status) {
           const state = document.createElement("div");
           state.className = "state";
           state.textContent = game.status;

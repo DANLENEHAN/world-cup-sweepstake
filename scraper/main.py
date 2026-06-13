@@ -30,6 +30,7 @@ MATCH_TIME_SELECTOR = "span.match-row_matchTime__9QJXJ"
 VENUE_SELECTOR = "div.match-row_stadiumCityLabels__zjXUq span"
 
 WINNER_CLASS_MARKER = "scoreWinner"
+FULL_TIME_CLASS_MARKER = "fullTime"
 
 
 PLAYER_TEAMS = {
@@ -415,7 +416,14 @@ def collect_games(html: str) -> list[dict]:
         home["score"], away["score"] = scores
         home["winner"], away["winner"] = won
 
-        played = home["score"] is not None and away["score"] is not None
+        status_el = el.select_one(STATUS_LABEL_SELECTOR)
+
+        # A match is only "played" once it has gone to full time. While a
+        # game is live, FIFA already shows the in-progress score here too,
+        # so checking for scores alone would mark live games as finished.
+        played = status_el is not None and any(
+            FULL_TIME_CLASS_MARKER in cls for cls in status_el.get("class", [])
+        )
 
         # If the page didn't flag a winner (no penalties), decide on score.
         if played and not home["winner"] and not away["winner"]:
@@ -428,7 +436,6 @@ def collect_games(html: str) -> list[dict]:
         ]
         venue_parts = [v.get_text(strip=True) for v in el.select(VENUE_SELECTOR)]
 
-        status_el = el.select_one(STATUS_LABEL_SELECTOR)
         time_el = el.select_one(MATCH_TIME_SELECTOR)
 
         games.append({
