@@ -265,6 +265,12 @@
           filter === "all" ? true : filter === "played" ? game.played : !game.played
         );
 
+        // Most recent first for results/all; upcoming stays chronological.
+        // Sort is stable, so matches within the same date keep their order.
+        if (filter === "played" || filter === "all") {
+          visible.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+        }
+
         if (visible.length === 0) {
           const empty = document.createElement("section");
           empty.className = "card";
