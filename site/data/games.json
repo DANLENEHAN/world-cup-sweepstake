@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-30T09:10:06.117959+00:00",
+  "updated_at": "2026-06-30T18:40:24.873067+00:00",
   "games": [
     {
       "date": "2026-06-11",
@@ -40,7 +40,7 @@
       "played": true,
       "home": {
         "abbr": "KOR",
-        "name": "Korea Republic",
+        "name": "South Korea",
         "player": "Dan",
         "score": 2,
         "winner": true,
@@ -48,7 +48,7 @@
       },
       "away": {
         "abbr": "CZE",
-        "name": "Czechia",
+        "name": "Czech Republic",
         "player": "Mum",
         "score": 1,
         "winner": false,
@@ -210,7 +210,7 @@
       },
       "away": {
         "abbr": "TUR",
-        "name": "T\u00fcrkiye",
+        "name": "Turkey",
         "player": "Matthew",
         "score": 0,
         "winner": false,
@@ -272,8 +272,8 @@
       }
     },
     {
-      "date": "2026-06-14",
-      "date_label": "Sunday 14 June 2026",
+      "date": "2026-06-15",
+      "date_label": "Monday 15 June 2026",
       "stage": "First Stage",
       "group": "Group E",
       "venue": "Philadelphia Stadium (Philadelphia)",
@@ -283,7 +283,7 @@
       "played": true,
       "home": {
         "abbr": "CIV",
-        "name": "C\u00f4te d'Ivoire",
+        "name": "Ivory Coast",
         "player": "Mum",
         "score": 1,
         "winner": true,
@@ -345,7 +345,7 @@
       },
       "away": {
         "abbr": "CPV",
-        "name": "Cabo Verde",
+        "name": "Cape Verde",
         "player": "Dad",
         "score": 0,
         "winner": false,
@@ -418,7 +418,7 @@
       "played": true,
       "home": {
         "abbr": "IRN",
-        "name": "IR Iran",
+        "name": "Iran",
         "player": "Matthew",
         "score": 2,
         "winner": false,
@@ -561,7 +561,7 @@
       },
       "away": {
         "abbr": "COD",
-        "name": "Congo DR",
+        "name": "DR Congo",
         "player": "Dan",
         "score": 1,
         "winner": false,
@@ -596,8 +596,8 @@
       }
     },
     {
-      "date": "2026-06-17",
-      "date_label": "Wednesday 17 June 2026",
+      "date": "2026-06-18",
+      "date_label": "Thursday 18 June 2026",
       "stage": "First Stage",
       "group": "Group L",
       "venue": "Toronto Stadium (Toronto)",
@@ -661,7 +661,7 @@
       "played": true,
       "home": {
         "abbr": "CZE",
-        "name": "Czechia",
+        "name": "Czech Republic",
         "player": "Mum",
         "score": 1,
         "winner": false,
@@ -750,7 +750,7 @@
       },
       "away": {
         "abbr": "KOR",
-        "name": "Korea Republic",
+        "name": "South Korea",
         "player": "Dan",
         "score": 0,
         "winner": false,
@@ -850,7 +850,7 @@
       "played": true,
       "home": {
         "abbr": "TUR",
-        "name": "T\u00fcrkiye",
+        "name": "Turkey",
         "player": "Matthew",
         "score": 0,
         "winner": false,
@@ -912,7 +912,7 @@
       },
       "away": {
         "abbr": "CIV",
-        "name": "C\u00f4te d'Ivoire",
+        "name": "Ivory Coast",
         "player": "Mum",
         "score": 1,
         "winner": false,
@@ -1020,7 +1020,7 @@
       },
       "away": {
         "abbr": "IRN",
-        "name": "IR Iran",
+        "name": "Iran",
         "player": "Matthew",
         "score": 0,
         "winner": false,
@@ -1047,7 +1047,7 @@
       },
       "away": {
         "abbr": "CPV",
-        "name": "Cabo Verde",
+        "name": "Cape Verde",
         "player": "Dad",
         "score": 2,
         "winner": false,
@@ -1244,8 +1244,8 @@
       }
     },
     {
-      "date": "2026-06-23",
-      "date_label": "Tuesday 23 June 2026",
+      "date": "2026-06-24",
+      "date_label": "Wednesday 24 June 2026",
       "stage": "First Stage",
       "group": "Group L",
       "venue": "Toronto Stadium (Toronto)",
@@ -1290,7 +1290,7 @@
       },
       "away": {
         "abbr": "COD",
-        "name": "Congo DR",
+        "name": "DR Congo",
         "player": "Dan",
         "score": 0,
         "winner": false,
@@ -1417,7 +1417,7 @@
       "played": true,
       "home": {
         "abbr": "CZE",
-        "name": "Czechia",
+        "name": "Czech Republic",
         "player": "Mum",
         "score": 0,
         "winner": false,
@@ -1452,7 +1452,7 @@
       },
       "away": {
         "abbr": "KOR",
-        "name": "Korea Republic",
+        "name": "South Korea",
         "player": "Dan",
         "score": 0,
         "winner": false,
@@ -1479,7 +1479,7 @@
       },
       "away": {
         "abbr": "CIV",
-        "name": "C\u00f4te d'Ivoire",
+        "name": "Ivory Coast",
         "player": "Mum",
         "score": 2,
         "winner": true,
@@ -1514,8 +1514,8 @@
       }
     },
     {
-      "date": "2026-06-25",
-      "date_label": "Thursday 25 June 2026",
+      "date": "2026-06-26",
+      "date_label": "Friday 26 June 2026",
       "stage": "First Stage",
       "group": "Group F",
       "venue": "Dallas Stadium (Dallas)",
@@ -1541,8 +1541,8 @@
       }
     },
     {
-      "date": "2026-06-25",
-      "date_label": "Thursday 25 June 2026",
+      "date": "2026-06-26",
+      "date_label": "Friday 26 June 2026",
       "stage": "First Stage",
       "group": "Group F",
       "venue": "Kansas City Stadium (Kansas City)",
@@ -1579,7 +1579,7 @@
       "played": true,
       "home": {
         "abbr": "TUR",
-        "name": "T\u00fcrkiye",
+        "name": "Turkey",
         "player": "Matthew",
         "score": 3,
         "winner": true,
@@ -1687,7 +1687,7 @@
       "played": true,
       "home": {
         "abbr": "CPV",
-        "name": "Cabo Verde",
+        "name": "Cape Verde",
         "player": "Dad",
         "score": 0,
         "winner": false,
@@ -1749,7 +1749,7 @@
       },
       "away": {
         "abbr": "IRN",
-        "name": "IR Iran",
+        "name": "Iran",
         "player": "Matthew",
         "score": 1,
         "winner": false,
@@ -1838,8 +1838,8 @@
       }
     },
     {
-      "date": "2026-06-27",
-      "date_label": "Saturday 27 June 2026",
+      "date": "2026-06-28",
+      "date_label": "Sunday 28 June 2026",
       "stage": "First Stage",
       "group": "Group K",
       "venue": "Miami Stadium (Miami)",
@@ -1865,8 +1865,8 @@
       }
     },
     {
-      "date": "2026-06-27",
-      "date_label": "Saturday 27 June 2026",
+      "date": "2026-06-28",
+      "date_label": "Sunday 28 June 2026",
       "stage": "First Stage",
       "group": "Group K",
       "venue": "Atlanta Stadium (Atlanta)",
@@ -1876,7 +1876,7 @@
       "played": true,
       "home": {
         "abbr": "COD",
-        "name": "Congo DR",
+        "name": "DR Congo",
         "player": "Dan",
         "score": 3,
         "winner": true,
@@ -2059,15 +2059,15 @@
       "stage": "Round of 32",
       "group": null,
       "venue": "Dallas Stadium (Dallas)",
-      "status": null,
-      "kickoff": "2026-06-30T17:00:00+00:00",
-      "time": "18:00",
+      "status": "80'",
+      "kickoff": null,
+      "time": null,
       "played": false,
       "home": {
         "abbr": "CIV",
-        "name": "C\u00f4te d'Ivoire",
+        "name": "Ivory Coast",
         "player": "Mum",
-        "score": null,
+        "score": 1,
         "winner": false,
         "penalties": null
       },
@@ -2075,7 +2075,7 @@
         "abbr": "NOR",
         "name": "Norway",
         "player": "Naomi",
-        "score": null,
+        "score": 1,
         "winner": false,
         "penalties": null
       }
@@ -2087,8 +2087,8 @@
       "group": null,
       "venue": "New York/New Jersey Stadium (New Jersey)",
       "status": null,
-      "kickoff": "2026-06-30T21:00:00+00:00",
-      "time": "22:00",
+      "kickoff": "2026-06-30T22:00:00+00:00",
+      "time": "23:00",
       "played": false,
       "home": {
         "abbr": "FRA",
@@ -2114,8 +2114,8 @@
       "group": null,
       "venue": "Mexico City Stadium (Mexico City)",
       "status": null,
-      "kickoff": "2026-07-01T01:00:00+00:00",
-      "time": "02:00",
+      "kickoff": "2026-07-01T02:00:00+00:00",
+      "time": "03:00",
       "played": false,
       "home": {
         "abbr": "MEX",
@@ -2141,8 +2141,8 @@
       "group": null,
       "venue": "Atlanta Stadium (Atlanta)",
       "status": null,
-      "kickoff": "2026-07-01T16:00:00+00:00",
-      "time": "17:00",
+      "kickoff": "2026-07-01T17:00:00+00:00",
+      "time": "18:00",
       "played": false,
       "home": {
         "abbr": "ENG",
@@ -2154,7 +2154,7 @@
       },
       "away": {
         "abbr": "COD",
-        "name": "Congo DR",
+        "name": "DR Congo",
         "player": "Dan",
         "score": null,
         "winner": false,
@@ -2168,8 +2168,8 @@
       "group": null,
       "venue": "Seattle Stadium (Seattle)",
       "status": null,
-      "kickoff": "2026-07-01T20:00:00+00:00",
-      "time": "21:00",
+      "kickoff": "2026-07-01T21:00:00+00:00",
+      "time": "22:00",
       "played": false,
       "home": {
         "abbr": "BEL",
@@ -2195,8 +2195,8 @@
       "group": null,
       "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
       "status": null,
-      "kickoff": "2026-07-02T00:00:00+00:00",
-      "time": "01:00",
+      "kickoff": "2026-07-02T01:00:00+00:00",
+      "time": "02:00",
       "played": false,
       "home": {
         "abbr": "USA",
@@ -2222,8 +2222,8 @@
       "group": null,
       "venue": "Los Angeles Stadium (Los Angeles)",
       "status": null,
-      "kickoff": "2026-07-02T19:00:00+00:00",
-      "time": "20:00",
+      "kickoff": "2026-07-02T20:00:00+00:00",
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "ESP",
@@ -2243,14 +2243,14 @@
       }
     },
     {
-      "date": "2026-07-02",
-      "date_label": "Thursday 02 July 2026",
+      "date": "2026-07-03",
+      "date_label": "Friday 03 July 2026",
       "stage": "Round of 32",
       "group": null,
       "venue": "Toronto Stadium (Toronto)",
       "status": null,
-      "kickoff": "2026-07-02T23:00:00+00:00",
-      "time": "00:00",
+      "kickoff": "2026-07-03T00:00:00+00:00",
+      "time": "01:00",
       "played": false,
       "home": {
         "abbr": "POR",
@@ -2276,8 +2276,8 @@
       "group": null,
       "venue": "BC Place Vancouver (Vancouver)",
       "status": null,
-      "kickoff": "2026-07-03T03:00:00+00:00",
-      "time": "04:00",
+      "kickoff": "2026-07-03T04:00:00+00:00",
+      "time": "05:00",
       "played": false,
       "home": {
         "abbr": "SUI",
@@ -2303,8 +2303,8 @@
       "group": null,
       "venue": "Dallas Stadium (Dallas)",
       "status": null,
-      "kickoff": "2026-07-03T18:00:00+00:00",
-      "time": "19:00",
+      "kickoff": "2026-07-03T19:00:00+00:00",
+      "time": "20:00",
       "played": false,
       "home": {
         "abbr": "AUS",
@@ -2330,8 +2330,8 @@
       "group": null,
       "venue": "Miami Stadium (Miami)",
       "status": null,
-      "kickoff": "2026-07-03T22:00:00+00:00",
-      "time": "23:00",
+      "kickoff": "2026-07-03T23:00:00+00:00",
+      "time": "00:00",
       "played": false,
       "home": {
         "abbr": "ARG",
@@ -2343,7 +2343,7 @@
       },
       "away": {
         "abbr": "CPV",
-        "name": "Cabo Verde",
+        "name": "Cape Verde",
         "player": "Dad",
         "score": null,
         "winner": false,
@@ -2357,8 +2357,8 @@
       "group": null,
       "venue": "Kansas City Stadium (Kansas City)",
       "status": null,
-      "kickoff": "2026-07-04T01:30:00+00:00",
-      "time": "02:30",
+      "kickoff": "2026-07-04T02:30:00+00:00",
+      "time": "03:30",
       "played": false,
       "home": {
         "abbr": "COL",
@@ -2384,8 +2384,8 @@
       "group": null,
       "venue": "Houston Stadium (Houston)",
       "status": null,
-      "kickoff": "2026-07-04T17:00:00+00:00",
-      "time": "18:00",
+      "kickoff": "2026-07-04T18:00:00+00:00",
+      "time": "19:00",
       "played": false,
       "home": {
         "abbr": "CAN",
@@ -2411,8 +2411,8 @@
       "group": null,
       "venue": "Philadelphia Stadium (Philadelphia)",
       "status": null,
-      "kickoff": "2026-07-04T21:00:00+00:00",
-      "time": "22:00",
+      "kickoff": "2026-07-04T22:00:00+00:00",
+      "time": "23:00",
       "played": false,
       "home": {
         "abbr": "PAR",
@@ -2438,8 +2438,8 @@
       "group": null,
       "venue": "New York/New Jersey Stadium (New Jersey)",
       "status": null,
-      "kickoff": "2026-07-05T20:00:00+00:00",
-      "time": "21:00",
+      "kickoff": "2026-07-05T21:00:00+00:00",
+      "time": "22:00",
       "played": false,
       "home": {
         "abbr": "BRA",
@@ -2465,8 +2465,8 @@
       "group": null,
       "venue": "Mexico City Stadium (Mexico City)",
       "status": null,
-      "kickoff": "2026-07-06T00:00:00+00:00",
-      "time": "01:00",
+      "kickoff": "2026-07-06T01:00:00+00:00",
+      "time": "02:00",
       "played": false,
       "home": {
         "abbr": "W79",
@@ -2492,8 +2492,8 @@
       "group": null,
       "venue": "Dallas Stadium (Dallas)",
       "status": null,
-      "kickoff": "2026-07-06T19:00:00+00:00",
-      "time": "20:00",
+      "kickoff": "2026-07-06T20:00:00+00:00",
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "W83",
@@ -2519,8 +2519,8 @@
       "group": null,
       "venue": "Seattle Stadium (Seattle)",
       "status": null,
-      "kickoff": "2026-07-07T00:00:00+00:00",
-      "time": "01:00",
+      "kickoff": "2026-07-07T01:00:00+00:00",
+      "time": "02:00",
       "played": false,
       "home": {
         "abbr": "W81",
@@ -2546,8 +2546,8 @@
       "group": null,
       "venue": "Atlanta Stadium (Atlanta)",
       "status": null,
-      "kickoff": "2026-07-07T16:00:00+00:00",
-      "time": "17:00",
+      "kickoff": "2026-07-07T17:00:00+00:00",
+      "time": "18:00",
       "played": false,
       "home": {
         "abbr": "W86",
@@ -2573,8 +2573,8 @@
       "group": null,
       "venue": "BC Place Vancouver (Vancouver)",
       "status": null,
-      "kickoff": "2026-07-07T20:00:00+00:00",
-      "time": "21:00",
+      "kickoff": "2026-07-07T21:00:00+00:00",
+      "time": "22:00",
       "played": false,
       "home": {
         "abbr": "W85",
@@ -2600,8 +2600,8 @@
       "group": null,
       "venue": "Boston Stadium (Boston)",
       "status": null,
-      "kickoff": "2026-07-09T20:00:00+00:00",
-      "time": "21:00",
+      "kickoff": "2026-07-09T21:00:00+00:00",
+      "time": "22:00",
       "played": false,
       "home": {
         "abbr": "W89",
@@ -2627,8 +2627,8 @@
       "group": null,
       "venue": "Los Angeles Stadium (Los Angeles)",
       "status": null,
-      "kickoff": "2026-07-10T19:00:00+00:00",
-      "time": "20:00",
+      "kickoff": "2026-07-10T20:00:00+00:00",
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "W93",
@@ -2654,8 +2654,8 @@
       "group": null,
       "venue": "Miami Stadium (Miami)",
       "status": null,
-      "kickoff": "2026-07-11T21:00:00+00:00",
-      "time": "22:00",
+      "kickoff": "2026-07-11T22:00:00+00:00",
+      "time": "23:00",
       "played": false,
       "home": {
         "abbr": "W91",
@@ -2681,8 +2681,8 @@
       "group": null,
       "venue": "Kansas City Stadium (Kansas City)",
       "status": null,
-      "kickoff": "2026-07-12T01:00:00+00:00",
-      "time": "02:00",
+      "kickoff": "2026-07-12T02:00:00+00:00",
+      "time": "03:00",
       "played": false,
       "home": {
         "abbr": "W95",
@@ -2708,8 +2708,8 @@
       "group": null,
       "venue": "Dallas Stadium (Dallas)",
       "status": null,
-      "kickoff": "2026-07-14T19:00:00+00:00",
-      "time": "20:00",
+      "kickoff": "2026-07-14T20:00:00+00:00",
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "W97",
@@ -2735,8 +2735,8 @@
       "group": null,
       "venue": "Atlanta Stadium (Atlanta)",
       "status": null,
-      "kickoff": "2026-07-15T19:00:00+00:00",
-      "time": "20:00",
+      "kickoff": "2026-07-15T20:00:00+00:00",
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "W99",
@@ -2762,8 +2762,8 @@
       "group": null,
       "venue": "Miami Stadium (Miami)",
       "status": null,
-      "kickoff": "2026-07-18T21:00:00+00:00",
-      "time": "22:00",
+      "kickoff": "2026-07-18T22:00:00+00:00",
+      "time": "23:00",
       "played": false,
       "home": {
         "abbr": "RU101",
@@ -2789,8 +2789,8 @@
       "group": null,
       "venue": "New York/New Jersey Stadium (New Jersey)",
       "status": null,
-      "kickoff": "2026-07-19T19:00:00+00:00",
-      "time": "20:00",
+      "kickoff": "2026-07-19T20:00:00+00:00",
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "W101",

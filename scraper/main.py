@@ -385,6 +385,19 @@ def calculate_scores(html: str) -> dict[str, int]:
         if score_a is None or score_b is None:
             continue
 
+        status_el = game.select_one(STATUS_LABEL_SELECTOR)
+
+        # Only score finished games. FIFA already posts a live score (and a
+        # knockout tie can sit level mid-match with no winner yet flagged), so
+        # scoring before full time would award points early — or crash on a
+        # level knockout with no penalty winner indicated.
+        played = status_el is not None and any(
+            FULL_TIME_CLASS_MARKER in cls for cls in status_el.get("class", [])
+        )
+
+        if not played:
+            continue
+
         team_points = get_match_points(
             stage=stage,
             team_a=team_a,
