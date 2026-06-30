@@ -169,6 +169,35 @@ TEAM_TO_PLAYER = {
 ABBREVIATION_TO_TEAM = {abbr: team for team, abbr in TEAM_ABBREVIATIONS.items()}
 
 
+# FIFA's pages don't always use the same display name for a team as our squad
+# lists do. The three-letter code is the stable key, but as a safety net for
+# when a code is missing or unexpected we also map known display-name aliases
+# back to our canonical names. Includes straight and curly apostrophe variants.
+NAME_ALIASES = {
+    "Côte d'Ivoire": "Ivory Coast",
+    "Côte d’Ivoire": "Ivory Coast",
+    "Cote d'Ivoire": "Ivory Coast",
+    "Korea Republic": "South Korea",
+    "Republic of Korea": "South Korea",
+    "IR Iran": "Iran",
+    "United States": "USA",
+    "Türkiye": "Turkey",
+    "Turkiye": "Turkey",
+    "Czechia": "Czech Republic",
+}
+
+
+def canonical_team_name(abbr: Optional[str], raw_name: Optional[str]) -> Optional[str]:
+    """Resolve a team to our canonical name, keyed first by 3-letter code."""
+    if abbr and abbr in ABBREVIATION_TO_TEAM:
+        return ABBREVIATION_TO_TEAM[abbr]
+
+    if raw_name in NAME_ALIASES:
+        return NAME_ALIASES[raw_name]
+
+    return raw_name
+
+
 GROUP_STAGES = {
     "First Stage",
     "Group A",
@@ -419,15 +448,11 @@ def parse_team_side(team_el) -> Optional[dict]:
     abbr = abbr_el.get_text(strip=True)
 
     name_el = team_el.select_one(TEAM_NAME_SELECTOR)
-    name = (
-        name_el.get_text(strip=True)
-        if name_el
-        else ABBREVIATION_TO_TEAM.get(abbr, abbr)
-    )
+    raw_name = name_el.get_text(strip=True) if name_el else None
 
     return {
         "abbr": abbr,
-        "name": name,
+        "name": canonical_team_name(abbr, raw_name) or abbr,
         "player": TEAM_TO_PLAYER.get(abbr),
     }
 
@@ -562,11 +587,10 @@ def collect_group_eliminated(html: str) -> list[str]:
         abbr_el = row.select_one(STANDINGS_ABBR_SELECTOR)
         abbr = abbr_el.get_text(strip=True) if abbr_el else None
 
-        name = ABBREVIATION_TO_TEAM.get(abbr)
+        name_el = row.select_one(STANDINGS_NAME_SELECTOR)
+        raw_name = name_el.get_text(strip=True) if name_el else None
 
-        if name is None:
-            name_el = row.select_one(STANDINGS_NAME_SELECTOR)
-            name = name_el.get_text(strip=True) if name_el else abbr
+        name = canonical_team_name(abbr, raw_name) or abbr
 
         if name:
             eliminated.append(name)
