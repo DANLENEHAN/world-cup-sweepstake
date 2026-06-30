@@ -402,6 +402,12 @@
         return side;
       }
 
+      // Knockout games decided on penalties carry a shoot-out tally that
+      // sits on the outer side of each team's score, e.g. "1 (3) – (4) 1".
+      function formatPenalty(team) {
+        return team.penalties == null ? "" : ` (${team.penalties})`;
+      }
+
       function renderCentre(game, live) {
         const centre = document.createElement("div");
         centre.className = "centre";
@@ -410,7 +416,9 @@
 
         if (game.played || live) {
           main.className = "score";
-          main.textContent = `${game.home.score ?? 0} – ${game.away.score ?? 0}`;
+          main.textContent =
+            `${game.home.score ?? 0}${formatPenalty(game.home)} – ` +
+            `${formatPenalty(game.away)}${game.away.score ?? 0}`;
         } else {
           main.className = "kickoff";
           main.textContent = game.time || game.status || "vs";

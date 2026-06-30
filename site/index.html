@@ -53,6 +53,11 @@
         margin-top: 0.15rem;
       }
 
+      .row .teams .out {
+        text-decoration: line-through;
+        opacity: 0.55;
+      }
+
       .row .points {
         font-size: 1.4rem;
         font-weight: 800;
@@ -189,7 +194,7 @@
           }
 
           const data = await response.json();
-          renderScores(data.scores);
+          renderScores(data.scores, data.eliminated || []);
 
           const updated = new Date(data.updated_at);
           status.textContent = `Scores last updated: ${formatLondonTime(updated)}`;
@@ -198,9 +203,11 @@
         }
       }
 
-      function renderScores(scores) {
+      function renderScores(scores, eliminated) {
         const container = document.getElementById("scores");
         container.innerHTML = "";
+
+        const eliminatedSet = new Set(eliminated);
 
         const sorted = Object.entries(scores).sort(([, a], [, b]) => b - a);
 
@@ -234,7 +241,20 @@
           if (teams) {
             const teamsEl = document.createElement("span");
             teamsEl.className = "teams";
-            teamsEl.textContent = teams.join(" · ");
+
+            teams.forEach((team, index) => {
+              const teamEl = document.createElement("span");
+              if (eliminatedSet.has(team)) {
+                teamEl.className = "out";
+              }
+              teamEl.textContent = team;
+              teamsEl.append(teamEl);
+
+              if (index < teams.length - 1) {
+                teamsEl.append(document.createTextNode(" · "));
+              }
+            });
+
             playerEl.append(teamsEl);
           }
 

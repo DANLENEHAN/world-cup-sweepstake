@@ -12,6 +12,7 @@ from playwright.sync_api import sync_playwright
 
 
 URL = "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=GB&wtw-filter=ALL"
+STANDINGS_URL = "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings"
 
 OUTPUT_FILE = Path("site/data/scores.json")
 GAMES_OUTPUT_FILE = Path("site/data/games.json")
@@ -29,6 +30,18 @@ TEAM_NAME_SELECTOR = "span.d-none.d-md-block"
 STATUS_LABEL_SELECTOR = "span.match-row_statusLabel__AiSA3"
 MATCH_TIME_SELECTOR = "span.match-row_matchTime__9QJXJ"
 VENUE_SELECTOR = "div.match-row_stadiumCityLabels__zjXUq span"
+
+# Penalty shoot-out tallies (e.g. "(4)") render in document order as
+# home then away, sitting either side of the full-time score.
+PENALTY_SELECTOR = "span[class*='match-row_penalties']"
+
+# Standings page: rows for teams knocked out at the group stage carry an
+# "eliminated" modifier class. Class hashes are matched by prefix so a FIFA
+# build bump doesn't silently break selection.
+STANDINGS_ROW_SELECTOR = "tr[class*='standings-table-row_tableRow']"
+STANDINGS_ELIMINATED_SELECTOR = "tr[class*='standings-table-row_eliminated']"
+STANDINGS_ABBR_SELECTOR = "div.team-abbreviations_container__wWtDG span"
+STANDINGS_NAME_SELECTOR = "span.d-none.d-md-1024-block"
 
 # The FIFA page renders kickoff times in UTC regardless of locale.
 SOURCE_TIME_ZONE = timezone.utc
@@ -186,6 +199,11 @@ FINAL_WIN_POINTS = 12
 RUNNER_UP_POINTS = 6
 
 
+# Stages where a single match eliminates the loser. A team that loses any of
+# these is out of the tournament.
+KNOCKOUT_STAGES = set(KNOCKOUT_WIN_POINTS) | {"Final"}
+
+
 def parse_score(value: str) -> Optional[int]:
     value = value.strip()
 
@@ -193,6 +211,19 @@ def parse_score(value: str) -> Optional[int]:
         return None
 
     return int(value)
+
+
+def parse_penalty(value: str) -> Optional[int]:
+    """Parse a penalty tally such as "(4)" into an integer."""
+    value = value.strip().strip("()")
+
+    if not value:
+        return None
+
+    try:
+        return int(value)
+    except ValueError:
+        return None
 
 
 def get_winner_and_loser(
@@ -261,7 +292,7 @@ def get_match_points(
     raise ValueError(f"No points mapping for stage: {stage}")
 
 
-def scrape_html() -> str:
+def fetch_html(url: str, wait_selector: str) -> str:
     with sync_playwright() as p:
         print("Launching browser...", flush=True)
         browser = p.chromium.launch(headless=True)
@@ -273,11 +304,11 @@ def scrape_html() -> str:
             }
         )
 
-        print(f"Navigating to {URL}...", flush=True)
-        page.goto(URL, wait_until="domcontentloaded", timeout=60_000)
+        print(f"Navigating to {url}...", flush=True)
+        page.goto(url, wait_until="domcontentloaded", timeout=60_000)
 
-        print(f"Waiting for selector '{GAME_SELECTOR}'...", flush=True)
-        page.wait_for_selector(GAME_SELECTOR, timeout=30_000)
+        print(f"Waiting for selector '{wait_selector}'...", flush=True)
+        page.wait_for_selector(wait_selector, timeout=30_000)
 
         print("Selector found, reading page content...", flush=True)
         html = page.content()
@@ -442,6 +473,15 @@ def collect_games(html: str) -> list[dict]:
         home["score"], away["score"] = scores
         home["winner"], away["winner"] = won
 
+        penalty_elements = el.select(PENALTY_SELECTOR)
+
+        if len(penalty_elements) == 2:
+            penalties = [parse_penalty(p.get_text(strip=True)) for p in penalty_elements]
+        else:
+            penalties = [None, None]
+
+        home["penalties"], away["penalties"] = penalties
+
         status_el = el.select_one(STATUS_LABEL_SELECTOR)
 
         # A match is only "played" once it has gone to full time. While a
@@ -483,6 +523,57 @@ def collect_games(html: str) -> list[dict]:
     return games
 
 
+def collect_eliminated(games: list[dict]) -> list[str]:
+    """Names of teams knocked out by losing a played knockout match.
+
+    Group-stage elimination (failing to advance on points) is not handled
+    here — only direct knockout losses.
+    """
+    eliminated = []
+
+    for game in games:
+        if not game["played"] or game["stage"] not in KNOCKOUT_STAGES:
+            continue
+
+        home = game["home"]
+        away = game["away"]
+
+        if home["winner"] and not away["winner"]:
+            eliminated.append(away["name"])
+        elif away["winner"] and not home["winner"]:
+            eliminated.append(home["name"])
+
+    return eliminated
+
+
+def collect_group_eliminated(html: str) -> list[str]:
+    """Names of teams knocked out at the group stage.
+
+    The standings page flags these rows with an "eliminated" modifier class.
+    Teams are keyed by their three-letter code so naming differences between
+    pages (e.g. "Korea Republic" vs "South Korea") map back to our canonical
+    names.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+
+    eliminated = []
+
+    for row in soup.select(STANDINGS_ELIMINATED_SELECTOR):
+        abbr_el = row.select_one(STANDINGS_ABBR_SELECTOR)
+        abbr = abbr_el.get_text(strip=True) if abbr_el else None
+
+        name = ABBREVIATION_TO_TEAM.get(abbr)
+
+        if name is None:
+            name_el = row.select_one(STANDINGS_NAME_SELECTOR)
+            name = name_el.get_text(strip=True) if name_el else abbr
+
+        if name:
+            eliminated.append(name)
+
+    return eliminated
+
+
 def write_json(path: Path, payload: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -495,13 +586,31 @@ def write_json(path: Path, payload: dict) -> None:
 
 
 def main() -> None:
-    html = scrape_html()
+    html = fetch_html(URL, GAME_SELECTOR)
     updated_at = datetime.now(timezone.utc).isoformat()
 
-    scores = calculate_scores(html)
-    write_json(OUTPUT_FILE, {"updated_at": updated_at, "scores": scores})
-
     games = collect_games(html)
+    eliminated = collect_eliminated(games)
+
+    # Group-stage exits live on a separate standings page. A failure there
+    # shouldn't lose the scores and fixtures we already scraped.
+    try:
+        standings_html = fetch_html(STANDINGS_URL, STANDINGS_ROW_SELECTOR)
+        group_eliminated = collect_group_eliminated(standings_html)
+    except Exception as exc:  # noqa: BLE001 - best-effort enrichment
+        print(f"Warning: failed to scrape standings: {exc}", flush=True)
+        group_eliminated = []
+
+    # Merge knockout losers with group-stage exits, preserving order and
+    # dropping duplicates.
+    all_eliminated = list(dict.fromkeys(eliminated + group_eliminated))
+
+    scores = calculate_scores(html)
+    write_json(
+        OUTPUT_FILE,
+        {"updated_at": updated_at, "scores": scores, "eliminated": all_eliminated},
+    )
+
     write_json(GAMES_OUTPUT_FILE, {"updated_at": updated_at, "games": games})
 
     print(json.dumps(scores, indent=2))

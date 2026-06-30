@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-12T10:00:31.237543+00:00",
+  "updated_at": "2026-06-30T09:03:10.414078+00:00",
   "games": [
     {
       "date": "2026-06-11",
@@ -8,6 +8,7 @@
       "group": "Group A",
       "venue": "Mexico City Stadium (Mexico City)",
       "status": "FT",
+      "kickoff": null,
       "time": null,
       "played": true,
       "home": {
@@ -15,14 +16,16 @@
         "name": "Mexico",
         "player": "Naomi",
         "score": 2,
-        "winner": true
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "RSA",
         "name": "South Africa",
         "player": "Dad",
         "score": 0,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -32,6 +35,7 @@
       "group": "Group A",
       "venue": "Guadalajara Stadium (Guadalajara)",
       "status": "FT",
+      "kickoff": null,
       "time": null,
       "played": true,
       "home": {
@@ -39,14 +43,16 @@
         "name": "Korea Republic",
         "player": "Dan",
         "score": 2,
-        "winner": true
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "CZE",
         "name": "Czechia",
         "player": "Mum",
         "score": 1,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -55,22 +61,25 @@
       "stage": "First Stage",
       "group": "Group B",
       "venue": "Toronto Stadium (Toronto)",
-      "status": null,
-      "time": "20:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "CAN",
         "name": "Canada",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "BIH",
         "name": "Bosnia and Herzegovina",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -79,22 +88,25 @@
       "stage": "First Stage",
       "group": "Group D",
       "venue": "Los Angeles Stadium (Los Angeles)",
-      "status": null,
-      "time": "02:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "USA",
         "name": "USA",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 4,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "PAR",
         "name": "Paraguay",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -103,22 +115,25 @@
       "stage": "First Stage",
       "group": "Group B",
       "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
-      "status": null,
-      "time": "20:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "QAT",
         "name": "Qatar",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "SUI",
         "name": "Switzerland",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -127,22 +142,25 @@
       "stage": "First Stage",
       "group": "Group C",
       "venue": "New York/New Jersey Stadium (New Jersey)",
-      "status": null,
-      "time": "23:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "BRA",
         "name": "Brazil",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "MAR",
         "name": "Morocco",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -151,22 +169,25 @@
       "stage": "First Stage",
       "group": "Group C",
       "venue": "Boston Stadium (Boston)",
-      "status": null,
-      "time": "02:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "HAI",
         "name": "Haiti",
         "player": null,
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "SCO",
         "name": "Scotland",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -175,22 +196,25 @@
       "stage": "First Stage",
       "group": "Group D",
       "venue": "BC Place Vancouver (Vancouver)",
-      "status": null,
-      "time": "05:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "AUS",
         "name": "Australia",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "TUR",
         "name": "T\u00fcrkiye",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -199,22 +223,25 @@
       "stage": "First Stage",
       "group": "Group E",
       "venue": "Houston Stadium (Houston)",
-      "status": null,
-      "time": "18:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "GER",
         "name": "Germany",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 7,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "CUW",
         "name": "Cura\u00e7ao",
         "player": null,
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -223,22 +250,25 @@
       "stage": "First Stage",
       "group": "Group F",
       "venue": "Dallas Stadium (Dallas)",
-      "status": null,
-      "time": "21:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "NED",
         "name": "Netherlands",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "JPN",
         "name": "Japan",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -247,22 +277,25 @@
       "stage": "First Stage",
       "group": "Group E",
       "venue": "Philadelphia Stadium (Philadelphia)",
-      "status": null,
-      "time": "00:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "CIV",
         "name": "C\u00f4te d'Ivoire",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "ECU",
         "name": "Ecuador",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -271,22 +304,25 @@
       "stage": "First Stage",
       "group": "Group F",
       "venue": "Monterrey Stadium (Monterrey)",
-      "status": null,
-      "time": "03:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "SWE",
         "name": "Sweden",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 5,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "TUN",
         "name": "Tunisia",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -295,22 +331,25 @@
       "stage": "First Stage",
       "group": "Group H",
       "venue": "Atlanta Stadium (Atlanta)",
-      "status": null,
-      "time": "17:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "ESP",
         "name": "Spain",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "CPV",
         "name": "Cabo Verde",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -319,22 +358,25 @@
       "stage": "First Stage",
       "group": "Group G",
       "venue": "Seattle Stadium (Seattle)",
-      "status": null,
-      "time": "20:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "BEL",
         "name": "Belgium",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "EGY",
         "name": "Egypt",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -343,22 +385,25 @@
       "stage": "First Stage",
       "group": "Group H",
       "venue": "Miami Stadium (Miami)",
-      "status": null,
-      "time": "23:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "KSA",
         "name": "Saudi Arabia",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "URU",
         "name": "Uruguay",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -367,22 +412,25 @@
       "stage": "First Stage",
       "group": "Group G",
       "venue": "Los Angeles Stadium (Los Angeles)",
-      "status": null,
-      "time": "02:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "IRN",
         "name": "IR Iran",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "NZL",
         "name": "New Zealand",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -391,22 +439,25 @@
       "stage": "First Stage",
       "group": "Group I",
       "venue": "New York/New Jersey Stadium (New Jersey)",
-      "status": null,
-      "time": "20:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "FRA",
         "name": "France",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 3,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "SEN",
         "name": "Senegal",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -415,22 +466,25 @@
       "stage": "First Stage",
       "group": "Group I",
       "venue": "Boston Stadium (Boston)",
-      "status": null,
-      "time": "23:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "IRQ",
         "name": "Iraq",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "NOR",
         "name": "Norway",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 4,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -439,22 +493,25 @@
       "stage": "First Stage",
       "group": "Group J",
       "venue": "Kansas City Stadium (Kansas City)",
-      "status": null,
-      "time": "02:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "ARG",
         "name": "Argentina",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 3,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "ALG",
         "name": "Algeria",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -463,22 +520,25 @@
       "stage": "First Stage",
       "group": "Group J",
       "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
-      "status": null,
-      "time": "05:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "AUT",
         "name": "Austria",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 3,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "JOR",
         "name": "Jordan",
         "player": null,
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -487,22 +547,25 @@
       "stage": "First Stage",
       "group": "Group K",
       "venue": "Houston Stadium (Houston)",
-      "status": null,
-      "time": "18:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "POR",
         "name": "Portugal",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "COD",
         "name": "Congo DR",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -511,22 +574,25 @@
       "stage": "First Stage",
       "group": "Group L",
       "venue": "Dallas Stadium (Dallas)",
-      "status": null,
-      "time": "21:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "ENG",
         "name": "England",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 4,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "CRO",
         "name": "Croatia",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -535,22 +601,25 @@
       "stage": "First Stage",
       "group": "Group L",
       "venue": "Toronto Stadium (Toronto)",
-      "status": null,
-      "time": "00:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "GHA",
         "name": "Ghana",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "PAN",
         "name": "Panama",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -559,22 +628,25 @@
       "stage": "First Stage",
       "group": "Group K",
       "venue": "Mexico City Stadium (Mexico City)",
-      "status": null,
-      "time": "03:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "UZB",
         "name": "Uzbekistan",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "COL",
         "name": "Colombia",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 3,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -583,22 +655,25 @@
       "stage": "First Stage",
       "group": "Group A",
       "venue": "Atlanta Stadium (Atlanta)",
-      "status": null,
-      "time": "17:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "CZE",
         "name": "Czechia",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "RSA",
         "name": "South Africa",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -607,22 +682,25 @@
       "stage": "First Stage",
       "group": "Group B",
       "venue": "Los Angeles Stadium (Los Angeles)",
-      "status": null,
-      "time": "20:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "SUI",
         "name": "Switzerland",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 4,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "BIH",
         "name": "Bosnia and Herzegovina",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -631,22 +709,25 @@
       "stage": "First Stage",
       "group": "Group B",
       "venue": "BC Place Vancouver (Vancouver)",
-      "status": null,
-      "time": "23:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "CAN",
         "name": "Canada",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 6,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "QAT",
         "name": "Qatar",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -655,22 +736,25 @@
       "stage": "First Stage",
       "group": "Group A",
       "venue": "Guadalajara Stadium (Guadalajara)",
-      "status": null,
-      "time": "02:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "MEX",
         "name": "Mexico",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "KOR",
         "name": "Korea Republic",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -679,22 +763,25 @@
       "stage": "First Stage",
       "group": "Group D",
       "venue": "Seattle Stadium (Seattle)",
-      "status": null,
-      "time": "20:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "USA",
         "name": "USA",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "AUS",
         "name": "Australia",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -703,22 +790,25 @@
       "stage": "First Stage",
       "group": "Group C",
       "venue": "Boston Stadium (Boston)",
-      "status": null,
-      "time": "23:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "SCO",
         "name": "Scotland",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "MAR",
         "name": "Morocco",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -727,22 +817,25 @@
       "stage": "First Stage",
       "group": "Group C",
       "venue": "Philadelphia Stadium (Philadelphia)",
-      "status": null,
-      "time": "01:30",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "BRA",
         "name": "Brazil",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 3,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "HAI",
         "name": "Haiti",
         "player": null,
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -751,22 +844,25 @@
       "stage": "First Stage",
       "group": "Group D",
       "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
-      "status": null,
-      "time": "04:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "TUR",
         "name": "T\u00fcrkiye",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "PAR",
         "name": "Paraguay",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -775,22 +871,25 @@
       "stage": "First Stage",
       "group": "Group F",
       "venue": "Houston Stadium (Houston)",
-      "status": null,
-      "time": "18:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "NED",
         "name": "Netherlands",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 5,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "SWE",
         "name": "Sweden",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -799,22 +898,25 @@
       "stage": "First Stage",
       "group": "Group E",
       "venue": "Toronto Stadium (Toronto)",
-      "status": null,
-      "time": "21:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "GER",
         "name": "Germany",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "CIV",
         "name": "C\u00f4te d'Ivoire",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -823,22 +925,25 @@
       "stage": "First Stage",
       "group": "Group E",
       "venue": "Kansas City Stadium (Kansas City)",
-      "status": null,
-      "time": "01:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "ECU",
         "name": "Ecuador",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "CUW",
         "name": "Cura\u00e7ao",
         "player": null,
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -847,22 +952,25 @@
       "stage": "First Stage",
       "group": "Group F",
       "venue": "Monterrey Stadium (Monterrey)",
-      "status": null,
-      "time": "05:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "TUN",
         "name": "Tunisia",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "JPN",
         "name": "Japan",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 4,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -871,22 +979,25 @@
       "stage": "First Stage",
       "group": "Group H",
       "venue": "Atlanta Stadium (Atlanta)",
-      "status": null,
-      "time": "17:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "ESP",
         "name": "Spain",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 4,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "KSA",
         "name": "Saudi Arabia",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -895,22 +1006,25 @@
       "stage": "First Stage",
       "group": "Group G",
       "venue": "Los Angeles Stadium (Los Angeles)",
-      "status": null,
-      "time": "20:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "BEL",
         "name": "Belgium",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "IRN",
         "name": "IR Iran",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -919,22 +1033,25 @@
       "stage": "First Stage",
       "group": "Group H",
       "venue": "Miami Stadium (Miami)",
-      "status": null,
-      "time": "23:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "URU",
         "name": "Uruguay",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "CPV",
         "name": "Cabo Verde",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -943,22 +1060,25 @@
       "stage": "First Stage",
       "group": "Group G",
       "venue": "BC Place Vancouver (Vancouver)",
-      "status": null,
-      "time": "02:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "NZL",
         "name": "New Zealand",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "EGY",
         "name": "Egypt",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 3,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -967,22 +1087,25 @@
       "stage": "First Stage",
       "group": "Group J",
       "venue": "Dallas Stadium (Dallas)",
-      "status": null,
-      "time": "18:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "ARG",
         "name": "Argentina",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "AUT",
         "name": "Austria",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -991,22 +1114,25 @@
       "stage": "First Stage",
       "group": "Group I",
       "venue": "Philadelphia Stadium (Philadelphia)",
-      "status": null,
-      "time": "22:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "FRA",
         "name": "France",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 3,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "IRQ",
         "name": "Iraq",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1015,22 +1141,25 @@
       "stage": "First Stage",
       "group": "Group I",
       "venue": "New York/New Jersey Stadium (New Jersey)",
-      "status": null,
-      "time": "01:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "NOR",
         "name": "Norway",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 3,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "SEN",
         "name": "Senegal",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1039,22 +1168,25 @@
       "stage": "First Stage",
       "group": "Group J",
       "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
-      "status": null,
-      "time": "04:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "JOR",
         "name": "Jordan",
         "player": null,
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "ALG",
         "name": "Algeria",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -1063,22 +1195,25 @@
       "stage": "First Stage",
       "group": "Group K",
       "venue": "Houston Stadium (Houston)",
-      "status": null,
-      "time": "18:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "POR",
         "name": "Portugal",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 5,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "UZB",
         "name": "Uzbekistan",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1087,22 +1222,25 @@
       "stage": "First Stage",
       "group": "Group L",
       "venue": "Boston Stadium (Boston)",
-      "status": null,
-      "time": "21:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "ENG",
         "name": "England",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "GHA",
         "name": "Ghana",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1111,22 +1249,25 @@
       "stage": "First Stage",
       "group": "Group L",
       "venue": "Toronto Stadium (Toronto)",
-      "status": null,
-      "time": "00:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "PAN",
         "name": "Panama",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "CRO",
         "name": "Croatia",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -1135,22 +1276,25 @@
       "stage": "First Stage",
       "group": "Group K",
       "venue": "Guadalajara Stadium (Guadalajara)",
-      "status": null,
-      "time": "03:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "COL",
         "name": "Colombia",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "COD",
         "name": "Congo DR",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1159,22 +1303,25 @@
       "stage": "First Stage",
       "group": "Group B",
       "venue": "BC Place Vancouver (Vancouver)",
-      "status": null,
-      "time": "20:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "SUI",
         "name": "Switzerland",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "CAN",
         "name": "Canada",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1183,22 +1330,25 @@
       "stage": "First Stage",
       "group": "Group B",
       "venue": "Seattle Stadium (Seattle)",
-      "status": null,
-      "time": "20:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "BIH",
         "name": "Bosnia and Herzegovina",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 3,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "QAT",
         "name": "Qatar",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1207,22 +1357,25 @@
       "stage": "First Stage",
       "group": "Group C",
       "venue": "Miami Stadium (Miami)",
-      "status": null,
-      "time": "23:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "SCO",
         "name": "Scotland",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "BRA",
         "name": "Brazil",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 3,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -1231,22 +1384,25 @@
       "stage": "First Stage",
       "group": "Group C",
       "venue": "Atlanta Stadium (Atlanta)",
-      "status": null,
-      "time": "23:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "MAR",
         "name": "Morocco",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 4,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "HAI",
         "name": "Haiti",
         "player": null,
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1255,22 +1411,25 @@
       "stage": "First Stage",
       "group": "Group A",
       "venue": "Mexico City Stadium (Mexico City)",
-      "status": null,
-      "time": "02:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "CZE",
         "name": "Czechia",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "MEX",
         "name": "Mexico",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 3,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -1279,22 +1438,25 @@
       "stage": "First Stage",
       "group": "Group A",
       "venue": "Monterrey Stadium (Monterrey)",
-      "status": null,
-      "time": "02:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "RSA",
         "name": "South Africa",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "KOR",
         "name": "Korea Republic",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1303,22 +1465,25 @@
       "stage": "First Stage",
       "group": "Group E",
       "venue": "Philadelphia Stadium (Philadelphia)",
-      "status": null,
-      "time": "21:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "CUW",
         "name": "Cura\u00e7ao",
         "player": null,
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "CIV",
         "name": "C\u00f4te d'Ivoire",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -1327,22 +1492,25 @@
       "stage": "First Stage",
       "group": "Group E",
       "venue": "New York/New Jersey Stadium (New Jersey)",
-      "status": null,
-      "time": "21:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "ECU",
         "name": "Ecuador",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "GER",
         "name": "Germany",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1351,22 +1519,25 @@
       "stage": "First Stage",
       "group": "Group F",
       "venue": "Dallas Stadium (Dallas)",
-      "status": null,
-      "time": "00:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "JPN",
         "name": "Japan",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "SWE",
         "name": "Sweden",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1375,22 +1546,25 @@
       "stage": "First Stage",
       "group": "Group F",
       "venue": "Kansas City Stadium (Kansas City)",
-      "status": null,
-      "time": "00:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "TUN",
         "name": "Tunisia",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "NED",
         "name": "Netherlands",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 3,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -1399,22 +1573,25 @@
       "stage": "First Stage",
       "group": "Group D",
       "venue": "Los Angeles Stadium (Los Angeles)",
-      "status": null,
-      "time": "03:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "TUR",
         "name": "T\u00fcrkiye",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 3,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "USA",
         "name": "USA",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1423,22 +1600,25 @@
       "stage": "First Stage",
       "group": "Group D",
       "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
-      "status": null,
-      "time": "03:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "PAR",
         "name": "Paraguay",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "AUS",
         "name": "Australia",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1447,22 +1627,25 @@
       "stage": "First Stage",
       "group": "Group I",
       "venue": "Boston Stadium (Boston)",
-      "status": null,
-      "time": "20:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "NOR",
         "name": "Norway",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "FRA",
         "name": "France",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 4,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -1471,22 +1654,25 @@
       "stage": "First Stage",
       "group": "Group I",
       "venue": "Toronto Stadium (Toronto)",
-      "status": null,
-      "time": "20:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "SEN",
         "name": "Senegal",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 5,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "IRQ",
         "name": "Iraq",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1495,22 +1681,25 @@
       "stage": "First Stage",
       "group": "Group H",
       "venue": "Houston Stadium (Houston)",
-      "status": null,
-      "time": "01:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "CPV",
         "name": "Cabo Verde",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "KSA",
         "name": "Saudi Arabia",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1519,22 +1708,25 @@
       "stage": "First Stage",
       "group": "Group H",
       "venue": "Guadalajara Stadium (Guadalajara)",
-      "status": null,
-      "time": "01:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "URU",
         "name": "Uruguay",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "ESP",
         "name": "Spain",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -1543,22 +1735,25 @@
       "stage": "First Stage",
       "group": "Group G",
       "venue": "Seattle Stadium (Seattle)",
-      "status": null,
-      "time": "04:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "EGY",
         "name": "Egypt",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "IRN",
         "name": "IR Iran",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1567,22 +1762,25 @@
       "stage": "First Stage",
       "group": "Group G",
       "venue": "BC Place Vancouver (Vancouver)",
-      "status": null,
-      "time": "04:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "NZL",
         "name": "New Zealand",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "BEL",
         "name": "Belgium",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 5,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -1591,22 +1789,25 @@
       "stage": "First Stage",
       "group": "Group L",
       "venue": "New York/New Jersey Stadium (New Jersey)",
-      "status": null,
-      "time": "22:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "PAN",
         "name": "Panama",
         "player": "Mum",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "ENG",
         "name": "England",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -1615,22 +1816,25 @@
       "stage": "First Stage",
       "group": "Group L",
       "venue": "Philadelphia Stadium (Philadelphia)",
-      "status": null,
-      "time": "22:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "CRO",
         "name": "Croatia",
         "player": "Naomi",
-        "score": null,
-        "winner": false
+        "score": 2,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "GHA",
         "name": "Ghana",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1639,22 +1843,25 @@
       "stage": "First Stage",
       "group": "Group K",
       "venue": "Miami Stadium (Miami)",
-      "status": null,
-      "time": "00:30",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "COL",
         "name": "Colombia",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "POR",
         "name": "Portugal",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 0,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1663,22 +1870,25 @@
       "stage": "First Stage",
       "group": "Group K",
       "venue": "Atlanta Stadium (Atlanta)",
-      "status": null,
-      "time": "00:30",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "COD",
         "name": "Congo DR",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 3,
+        "winner": true,
+        "penalties": null
       },
       "away": {
         "abbr": "UZB",
         "name": "Uzbekistan",
         "player": "Dan",
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1687,22 +1897,25 @@
       "stage": "First Stage",
       "group": "Group J",
       "venue": "Kansas City Stadium (Kansas City)",
-      "status": null,
-      "time": "03:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "ALG",
         "name": "Algeria",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 3,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "AUT",
         "name": "Austria",
         "player": "Dad",
-        "score": null,
-        "winner": false
+        "score": 3,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1711,22 +1924,25 @@
       "stage": "First Stage",
       "group": "Group J",
       "venue": "Dallas Stadium (Dallas)",
-      "status": null,
-      "time": "03:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
         "abbr": "JOR",
         "name": "Jordan",
         "player": null,
-        "score": null,
-        "winner": false
+        "score": 1,
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "ARG",
         "name": "Argentina",
         "player": "Matthew",
-        "score": null,
-        "winner": false
+        "score": 3,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -1735,22 +1951,25 @@
       "stage": "Round of 32",
       "group": null,
       "venue": "Los Angeles Stadium (Los Angeles)",
-      "status": null,
-      "time": "20:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
-        "abbr": "2A",
-        "name": "2A",
-        "player": null,
-        "score": null,
-        "winner": false
+        "abbr": "RSA",
+        "name": "South Africa",
+        "player": "Dad",
+        "score": 0,
+        "winner": false,
+        "penalties": null
       },
       "away": {
-        "abbr": "2B",
-        "name": "2B",
-        "player": null,
-        "score": null,
-        "winner": false
+        "abbr": "CAN",
+        "name": "Canada",
+        "player": "Naomi",
+        "score": 1,
+        "winner": true,
+        "penalties": null
       }
     },
     {
@@ -1759,22 +1978,25 @@
       "stage": "Round of 32",
       "group": null,
       "venue": "Houston Stadium (Houston)",
-      "status": null,
-      "time": "18:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
-        "abbr": "1C",
-        "name": "1C",
-        "player": null,
-        "score": null,
-        "winner": false
+        "abbr": "BRA",
+        "name": "Brazil",
+        "player": "Dan",
+        "score": 2,
+        "winner": true,
+        "penalties": null
       },
       "away": {
-        "abbr": "2F",
-        "name": "2F",
-        "player": null,
-        "score": null,
-        "winner": false
+        "abbr": "JPN",
+        "name": "Japan",
+        "player": "Mum",
+        "score": 1,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -1783,22 +2005,25 @@
       "stage": "Round of 32",
       "group": null,
       "venue": "Boston Stadium (Boston)",
-      "status": null,
-      "time": "21:30",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
-        "abbr": "1E",
-        "name": "1E",
-        "player": null,
-        "score": null,
-        "winner": false
+        "abbr": "GER",
+        "name": "Germany",
+        "player": "Mum",
+        "score": 1,
+        "winner": false,
+        "penalties": 3
       },
       "away": {
-        "abbr": "3ABCDF",
-        "name": "3ABCDF",
-        "player": null,
-        "score": null,
-        "winner": false
+        "abbr": "PAR",
+        "name": "Paraguay",
+        "player": "Naomi",
+        "score": 1,
+        "winner": true,
+        "penalties": 4
       }
     },
     {
@@ -1807,22 +2032,25 @@
       "stage": "Round of 32",
       "group": null,
       "venue": "Monterrey Stadium (Monterrey)",
-      "status": null,
-      "time": "02:00",
-      "played": false,
+      "status": "FT",
+      "kickoff": null,
+      "time": null,
+      "played": true,
       "home": {
-        "abbr": "1F",
-        "name": "1F",
-        "player": null,
-        "score": null,
-        "winner": false
+        "abbr": "NED",
+        "name": "Netherlands",
+        "player": "Matthew",
+        "score": 1,
+        "winner": false,
+        "penalties": 2
       },
       "away": {
-        "abbr": "2C",
-        "name": "2C",
-        "player": null,
-        "score": null,
-        "winner": false
+        "abbr": "MAR",
+        "name": "Morocco",
+        "player": "Dan",
+        "score": 1,
+        "winner": true,
+        "penalties": 3
       }
     },
     {
@@ -1832,237 +2060,267 @@
       "group": null,
       "venue": "Dallas Stadium (Dallas)",
       "status": null,
-      "time": "18:00",
-      "played": false,
-      "home": {
-        "abbr": "2E",
-        "name": "2E",
-        "player": null,
-        "score": null,
-        "winner": false
-      },
-      "away": {
-        "abbr": "2I",
-        "name": "2I",
-        "player": null,
-        "score": null,
-        "winner": false
-      }
-    },
-    {
-      "date": "2026-06-30",
-      "date_label": "Tuesday 30 June 2026",
-      "stage": "Round of 32",
-      "group": null,
-      "venue": "New York/New Jersey Stadium (New Jersey)",
-      "status": null,
-      "time": "22:00",
-      "played": false,
-      "home": {
-        "abbr": "1I",
-        "name": "1I",
-        "player": null,
-        "score": null,
-        "winner": false
-      },
-      "away": {
-        "abbr": "3CDFGH",
-        "name": "3CDFGH",
-        "player": null,
-        "score": null,
-        "winner": false
-      }
-    },
-    {
-      "date": "2026-07-01",
-      "date_label": "Wednesday 01 July 2026",
-      "stage": "Round of 32",
-      "group": null,
-      "venue": "Mexico City Stadium (Mexico City)",
-      "status": null,
-      "time": "02:00",
-      "played": false,
-      "home": {
-        "abbr": "1A",
-        "name": "1A",
-        "player": null,
-        "score": null,
-        "winner": false
-      },
-      "away": {
-        "abbr": "3CEFHI",
-        "name": "3CEFHI",
-        "player": null,
-        "score": null,
-        "winner": false
-      }
-    },
-    {
-      "date": "2026-07-01",
-      "date_label": "Wednesday 01 July 2026",
-      "stage": "Round of 32",
-      "group": null,
-      "venue": "Atlanta Stadium (Atlanta)",
-      "status": null,
-      "time": "17:00",
-      "played": false,
-      "home": {
-        "abbr": "1L",
-        "name": "1L",
-        "player": null,
-        "score": null,
-        "winner": false
-      },
-      "away": {
-        "abbr": "3EHIJK",
-        "name": "3EHIJK",
-        "player": null,
-        "score": null,
-        "winner": false
-      }
-    },
-    {
-      "date": "2026-07-01",
-      "date_label": "Wednesday 01 July 2026",
-      "stage": "Round of 32",
-      "group": null,
-      "venue": "Seattle Stadium (Seattle)",
-      "status": null,
-      "time": "21:00",
-      "played": false,
-      "home": {
-        "abbr": "1G",
-        "name": "1G",
-        "player": null,
-        "score": null,
-        "winner": false
-      },
-      "away": {
-        "abbr": "3AEHIJ",
-        "name": "3AEHIJ",
-        "player": null,
-        "score": null,
-        "winner": false
-      }
-    },
-    {
-      "date": "2026-07-02",
-      "date_label": "Thursday 02 July 2026",
-      "stage": "Round of 32",
-      "group": null,
-      "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
-      "status": null,
-      "time": "01:00",
-      "played": false,
-      "home": {
-        "abbr": "1D",
-        "name": "1D",
-        "player": null,
-        "score": null,
-        "winner": false
-      },
-      "away": {
-        "abbr": "3BEFIJ",
-        "name": "3BEFIJ",
-        "player": null,
-        "score": null,
-        "winner": false
-      }
-    },
-    {
-      "date": "2026-07-02",
-      "date_label": "Thursday 02 July 2026",
-      "stage": "Round of 32",
-      "group": null,
-      "venue": "Los Angeles Stadium (Los Angeles)",
-      "status": null,
-      "time": "20:00",
-      "played": false,
-      "home": {
-        "abbr": "1H",
-        "name": "1H",
-        "player": null,
-        "score": null,
-        "winner": false
-      },
-      "away": {
-        "abbr": "2J",
-        "name": "2J",
-        "player": null,
-        "score": null,
-        "winner": false
-      }
-    },
-    {
-      "date": "2026-07-03",
-      "date_label": "Friday 03 July 2026",
-      "stage": "Round of 32",
-      "group": null,
-      "venue": "Toronto Stadium (Toronto)",
-      "status": null,
-      "time": "00:00",
-      "played": false,
-      "home": {
-        "abbr": "2K",
-        "name": "2K",
-        "player": null,
-        "score": null,
-        "winner": false
-      },
-      "away": {
-        "abbr": "2L",
-        "name": "2L",
-        "player": null,
-        "score": null,
-        "winner": false
-      }
-    },
-    {
-      "date": "2026-07-03",
-      "date_label": "Friday 03 July 2026",
-      "stage": "Round of 32",
-      "group": null,
-      "venue": "BC Place Vancouver (Vancouver)",
-      "status": null,
-      "time": "04:00",
-      "played": false,
-      "home": {
-        "abbr": "1B",
-        "name": "1B",
-        "player": null,
-        "score": null,
-        "winner": false
-      },
-      "away": {
-        "abbr": "3EFGIJ",
-        "name": "3EFGIJ",
-        "player": null,
-        "score": null,
-        "winner": false
-      }
-    },
-    {
-      "date": "2026-07-03",
-      "date_label": "Friday 03 July 2026",
-      "stage": "Round of 32",
-      "group": null,
-      "venue": "Dallas Stadium (Dallas)",
-      "status": null,
+      "kickoff": "2026-06-30T18:00:00+00:00",
       "time": "19:00",
       "played": false,
       "home": {
-        "abbr": "2D",
-        "name": "2D",
-        "player": null,
+        "abbr": "CIV",
+        "name": "C\u00f4te d'Ivoire",
+        "player": "Mum",
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
-        "abbr": "2G",
-        "name": "2G",
-        "player": null,
+        "abbr": "NOR",
+        "name": "Norway",
+        "player": "Naomi",
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "date_label": "Tuesday 30 June 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "New York/New Jersey Stadium (New Jersey)",
+      "status": null,
+      "kickoff": "2026-06-30T22:00:00+00:00",
+      "time": "23:00",
+      "played": false,
+      "home": {
+        "abbr": "FRA",
+        "name": "France",
+        "player": "Dad",
+        "score": null,
+        "winner": false,
+        "penalties": null
+      },
+      "away": {
+        "abbr": "SWE",
+        "name": "Sweden",
+        "player": "Dan",
+        "score": null,
+        "winner": false,
+        "penalties": null
+      }
+    },
+    {
+      "date": "2026-07-01",
+      "date_label": "Wednesday 01 July 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Mexico City Stadium (Mexico City)",
+      "status": null,
+      "kickoff": "2026-07-01T02:00:00+00:00",
+      "time": "03:00",
+      "played": false,
+      "home": {
+        "abbr": "MEX",
+        "name": "Mexico",
+        "player": "Naomi",
+        "score": null,
+        "winner": false,
+        "penalties": null
+      },
+      "away": {
+        "abbr": "ECU",
+        "name": "Ecuador",
+        "player": "Dad",
+        "score": null,
+        "winner": false,
+        "penalties": null
+      }
+    },
+    {
+      "date": "2026-07-01",
+      "date_label": "Wednesday 01 July 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Atlanta Stadium (Atlanta)",
+      "status": null,
+      "kickoff": "2026-07-01T17:00:00+00:00",
+      "time": "18:00",
+      "played": false,
+      "home": {
+        "abbr": "ENG",
+        "name": "England",
+        "player": "Naomi",
+        "score": null,
+        "winner": false,
+        "penalties": null
+      },
+      "away": {
+        "abbr": "COD",
+        "name": "Congo DR",
+        "player": "Dan",
+        "score": null,
+        "winner": false,
+        "penalties": null
+      }
+    },
+    {
+      "date": "2026-07-01",
+      "date_label": "Wednesday 01 July 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Seattle Stadium (Seattle)",
+      "status": null,
+      "kickoff": "2026-07-01T21:00:00+00:00",
+      "time": "22:00",
+      "played": false,
+      "home": {
+        "abbr": "BEL",
+        "name": "Belgium",
+        "player": "Dan",
+        "score": null,
+        "winner": false,
+        "penalties": null
+      },
+      "away": {
+        "abbr": "SEN",
+        "name": "Senegal",
+        "player": "Matthew",
+        "score": null,
+        "winner": false,
+        "penalties": null
+      }
+    },
+    {
+      "date": "2026-07-02",
+      "date_label": "Thursday 02 July 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "San Francisco Bay Area Stadium (San Francisco Bay Area)",
+      "status": null,
+      "kickoff": "2026-07-02T01:00:00+00:00",
+      "time": "02:00",
+      "played": false,
+      "home": {
+        "abbr": "USA",
+        "name": "USA",
+        "player": "Mum",
+        "score": null,
+        "winner": false,
+        "penalties": null
+      },
+      "away": {
+        "abbr": "BIH",
+        "name": "Bosnia and Herzegovina",
+        "player": "Dan",
+        "score": null,
+        "winner": false,
+        "penalties": null
+      }
+    },
+    {
+      "date": "2026-07-02",
+      "date_label": "Thursday 02 July 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Los Angeles Stadium (Los Angeles)",
+      "status": null,
+      "kickoff": "2026-07-02T20:00:00+00:00",
+      "time": "21:00",
+      "played": false,
+      "home": {
+        "abbr": "ESP",
+        "name": "Spain",
+        "player": "Mum",
+        "score": null,
+        "winner": false,
+        "penalties": null
+      },
+      "away": {
+        "abbr": "AUT",
+        "name": "Austria",
+        "player": "Dad",
+        "score": null,
+        "winner": false,
+        "penalties": null
+      }
+    },
+    {
+      "date": "2026-07-03",
+      "date_label": "Friday 03 July 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Toronto Stadium (Toronto)",
+      "status": null,
+      "kickoff": "2026-07-03T00:00:00+00:00",
+      "time": "01:00",
+      "played": false,
+      "home": {
+        "abbr": "POR",
+        "name": "Portugal",
+        "player": "Dad",
+        "score": null,
+        "winner": false,
+        "penalties": null
+      },
+      "away": {
+        "abbr": "CRO",
+        "name": "Croatia",
+        "player": "Naomi",
+        "score": null,
+        "winner": false,
+        "penalties": null
+      }
+    },
+    {
+      "date": "2026-07-03",
+      "date_label": "Friday 03 July 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "BC Place Vancouver (Vancouver)",
+      "status": null,
+      "kickoff": "2026-07-03T04:00:00+00:00",
+      "time": "05:00",
+      "played": false,
+      "home": {
+        "abbr": "SUI",
+        "name": "Switzerland",
+        "player": "Matthew",
+        "score": null,
+        "winner": false,
+        "penalties": null
+      },
+      "away": {
+        "abbr": "ALG",
+        "name": "Algeria",
+        "player": "Matthew",
+        "score": null,
+        "winner": false,
+        "penalties": null
+      }
+    },
+    {
+      "date": "2026-07-03",
+      "date_label": "Friday 03 July 2026",
+      "stage": "Round of 32",
+      "group": null,
+      "venue": "Dallas Stadium (Dallas)",
+      "status": null,
+      "kickoff": "2026-07-03T19:00:00+00:00",
+      "time": "20:00",
+      "played": false,
+      "home": {
+        "abbr": "AUS",
+        "name": "Australia",
+        "player": "Matthew",
+        "score": null,
+        "winner": false,
+        "penalties": null
+      },
+      "away": {
+        "abbr": "EGY",
+        "name": "Egypt",
+        "player": "Dad",
+        "score": null,
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -2072,21 +2330,24 @@
       "group": null,
       "venue": "Miami Stadium (Miami)",
       "status": null,
-      "time": "23:00",
+      "kickoff": "2026-07-03T23:00:00+00:00",
+      "time": "00:00",
       "played": false,
       "home": {
-        "abbr": "1J",
-        "name": "1J",
-        "player": null,
+        "abbr": "ARG",
+        "name": "Argentina",
+        "player": "Matthew",
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
-        "abbr": "2H",
-        "name": "2H",
-        "player": null,
+        "abbr": "CPV",
+        "name": "Cabo Verde",
+        "player": "Dad",
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -2096,21 +2357,24 @@
       "group": null,
       "venue": "Kansas City Stadium (Kansas City)",
       "status": null,
-      "time": "02:30",
+      "kickoff": "2026-07-04T02:30:00+00:00",
+      "time": "03:30",
       "played": false,
       "home": {
-        "abbr": "1K",
-        "name": "1K",
-        "player": null,
+        "abbr": "COL",
+        "name": "Colombia",
+        "player": "Dad",
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
-        "abbr": "3DEIJL",
-        "name": "3DEIJL",
-        "player": null,
+        "abbr": "GHA",
+        "name": "Ghana",
+        "player": "Dad",
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -2120,21 +2384,24 @@
       "group": null,
       "venue": "Houston Stadium (Houston)",
       "status": null,
-      "time": "18:00",
+      "kickoff": "2026-07-04T18:00:00+00:00",
+      "time": "19:00",
       "played": false,
       "home": {
-        "abbr": "W73",
-        "name": "W73",
-        "player": null,
+        "abbr": "CAN",
+        "name": "Canada",
+        "player": "Naomi",
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
-        "abbr": "W75",
-        "name": "W75",
-        "player": null,
+        "abbr": "MAR",
+        "name": "Morocco",
+        "player": "Dan",
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -2144,21 +2411,24 @@
       "group": null,
       "venue": "Philadelphia Stadium (Philadelphia)",
       "status": null,
-      "time": "22:00",
+      "kickoff": "2026-07-04T22:00:00+00:00",
+      "time": "23:00",
       "played": false,
       "home": {
-        "abbr": "W74",
-        "name": "W74",
-        "player": null,
+        "abbr": "PAR",
+        "name": "Paraguay",
+        "player": "Naomi",
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "W77",
         "name": "W77",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -2168,21 +2438,24 @@
       "group": null,
       "venue": "New York/New Jersey Stadium (New Jersey)",
       "status": null,
-      "time": "21:00",
+      "kickoff": "2026-07-05T21:00:00+00:00",
+      "time": "22:00",
       "played": false,
       "home": {
-        "abbr": "W76",
-        "name": "W76",
-        "player": null,
+        "abbr": "BRA",
+        "name": "Brazil",
+        "player": "Dan",
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "W78",
         "name": "W78",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -2192,21 +2465,24 @@
       "group": null,
       "venue": "Mexico City Stadium (Mexico City)",
       "status": null,
-      "time": "01:00",
+      "kickoff": "2026-07-06T01:00:00+00:00",
+      "time": "02:00",
       "played": false,
       "home": {
         "abbr": "W79",
         "name": "W79",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "W80",
         "name": "W80",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -2216,21 +2492,24 @@
       "group": null,
       "venue": "Dallas Stadium (Dallas)",
       "status": null,
-      "time": "20:00",
+      "kickoff": "2026-07-06T20:00:00+00:00",
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "W83",
         "name": "W83",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "W84",
         "name": "W84",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -2240,21 +2519,24 @@
       "group": null,
       "venue": "Seattle Stadium (Seattle)",
       "status": null,
-      "time": "01:00",
+      "kickoff": "2026-07-07T01:00:00+00:00",
+      "time": "02:00",
       "played": false,
       "home": {
         "abbr": "W81",
         "name": "W81",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "W82",
         "name": "W82",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -2264,21 +2546,24 @@
       "group": null,
       "venue": "Atlanta Stadium (Atlanta)",
       "status": null,
-      "time": "17:00",
+      "kickoff": "2026-07-07T17:00:00+00:00",
+      "time": "18:00",
       "played": false,
       "home": {
         "abbr": "W86",
         "name": "W86",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "W88",
         "name": "W88",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -2288,21 +2573,24 @@
       "group": null,
       "venue": "BC Place Vancouver (Vancouver)",
       "status": null,
-      "time": "21:00",
+      "kickoff": "2026-07-07T21:00:00+00:00",
+      "time": "22:00",
       "played": false,
       "home": {
         "abbr": "W85",
         "name": "W85",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "W87",
         "name": "W87",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -2312,21 +2600,24 @@
       "group": null,
       "venue": "Boston Stadium (Boston)",
       "status": null,
-      "time": "21:00",
+      "kickoff": "2026-07-09T21:00:00+00:00",
+      "time": "22:00",
       "played": false,
       "home": {
         "abbr": "W89",
         "name": "W89",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "W90",
         "name": "W90",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -2336,21 +2627,24 @@
       "group": null,
       "venue": "Los Angeles Stadium (Los Angeles)",
       "status": null,
-      "time": "20:00",
+      "kickoff": "2026-07-10T20:00:00+00:00",
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "W93",
         "name": "W93",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "W94",
         "name": "W94",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -2360,21 +2654,24 @@
       "group": null,
       "venue": "Miami Stadium (Miami)",
       "status": null,
-      "time": "22:00",
+      "kickoff": "2026-07-11T22:00:00+00:00",
+      "time": "23:00",
       "played": false,
       "home": {
         "abbr": "W91",
         "name": "W91",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "W92",
         "name": "W92",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -2384,21 +2681,24 @@
       "group": null,
       "venue": "Kansas City Stadium (Kansas City)",
       "status": null,
-      "time": "02:00",
+      "kickoff": "2026-07-12T02:00:00+00:00",
+      "time": "03:00",
       "played": false,
       "home": {
         "abbr": "W95",
         "name": "W95",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "W96",
         "name": "W96",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -2408,21 +2708,24 @@
       "group": null,
       "venue": "Dallas Stadium (Dallas)",
       "status": null,
-      "time": "20:00",
+      "kickoff": "2026-07-14T20:00:00+00:00",
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "W97",
         "name": "W97",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "W98",
         "name": "W98",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -2432,21 +2735,24 @@
       "group": null,
       "venue": "Atlanta Stadium (Atlanta)",
       "status": null,
-      "time": "20:00",
+      "kickoff": "2026-07-15T20:00:00+00:00",
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "W99",
         "name": "W99",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "W100",
         "name": "W100",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -2456,21 +2762,24 @@
       "group": null,
       "venue": "Miami Stadium (Miami)",
       "status": null,
-      "time": "22:00",
+      "kickoff": "2026-07-18T22:00:00+00:00",
+      "time": "23:00",
       "played": false,
       "home": {
         "abbr": "RU101",
         "name": "RU101",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "RU102",
         "name": "RU102",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     },
     {
@@ -2480,21 +2789,24 @@
       "group": null,
       "venue": "New York/New Jersey Stadium (New Jersey)",
       "status": null,
-      "time": "20:00",
+      "kickoff": "2026-07-19T20:00:00+00:00",
+      "time": "21:00",
       "played": false,
       "home": {
         "abbr": "W101",
         "name": "W101",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       },
       "away": {
         "abbr": "W102",
         "name": "W102",
         "player": null,
         "score": null,
-        "winner": false
+        "winner": false,
+        "penalties": null
       }
     }
   ]
