@@ -1,32 +1,36 @@
 {
-  "updated_at": "2026-06-30T18:40:24.873067+00:00",
+  "updated_at": "2026-07-01T18:45:51.053366+00:00",
   "scores": {
     "Dan": 33,
     "Mum": 25,
-    "Dad": 34,
+    "Dad": 37,
     "Matthew": 30,
-    "Naomi": 33
+    "Naomi": 42
   },
   "eliminated": [
     "South Africa",
     "Japan",
     "Germany",
     "Netherlands",
-    "South Korea",
-    "Czech Republic",
-    "Qatar",
-    "Scotland",
-    "Haiti",
-    "Turkey",
+    "Ivory Coast",
+    "Sweden",
+    "Ecuador",
+    "DR Congo",
     "Cura\u00e7ao",
-    "Tunisia",
+    "Czech Republic",
+    "Haiti",
     "Iran",
-    "New Zealand",
-    "Uruguay",
-    "Saudi Arabia",
     "Iraq",
     "Jordan",
-    "Uzbekistan",
-    "Panama"
+    "South Korea",
+    "New Zealand",
+    "Panama",
+    "Qatar",
+    "Saudi Arabia",
+    "Scotland",
+    "Tunisia",
+    "Turkey",
+    "Uruguay",
+    "Uzbekistan"
   ]
 }

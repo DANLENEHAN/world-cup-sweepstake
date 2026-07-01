@@ -46,7 +46,12 @@ TEAM_CARD_VALUE_SELECTOR = "span[class*='team-card-body-row_right']"
 TEAM_CARD_NAME_SELECTOR = "h3[class*='team-card_teamName']"
 TEAM_CARD_FLAG_SELECTOR = "img[class*='team-card_teamFlag']"
 STAGE_ROW_LABEL = "Stage"
-GROUP_STAGE_LABEL = "First Stage"
+
+# A team card's "Stage" row shows the furthest stage reached. Teams knocked
+# out in the group stage keep a group designation — either "First Stage" or a
+# group placing like "#4 - Group C" — while teams that advanced show a
+# knockout round ("Round of 32", etc.).
+GROUP_STAGE_MARKERS = ("First Stage", "Group")
 
 # The FIFA page renders kickoff times in UTC regardless of locale.
 SOURCE_TIME_ZONE = timezone.utc
@@ -589,6 +594,11 @@ def collect_eliminated(games: list[dict]) -> list[str]:
     return eliminated
 
 
+def is_group_stage_exit(stage: Optional[str]) -> bool:
+    """Whether a team card's stage value marks a group-stage elimination."""
+    return bool(stage) and any(marker in stage for marker in GROUP_STAGE_MARKERS)
+
+
 def team_card_stage(card) -> Optional[str]:
     """The furthest stage a team reached, from its team card's "Stage" row."""
     for row in card.select(TEAM_CARD_ROW_SELECTOR):
@@ -617,17 +627,18 @@ def team_card_abbr(card) -> Optional[str]:
 def collect_group_eliminated(html: str) -> list[str]:
     """Names of teams knocked out at the group stage.
 
-    The teams page shows each team's furthest stage; a card reading "First
-    Stage" means the team never left the group. Teams are keyed by their
-    three-letter code (read from the flag URL) so naming differences map back
-    to our canonical names. Knockout exits are handled from match results.
+    The teams page shows each team's furthest stage; a card still showing a
+    group designation ("First Stage" or a placing like "#4 - Group C") means
+    the team never left the group. Teams are keyed by their three-letter code
+    (read from the flag URL) so naming differences map back to our canonical
+    names. Knockout exits are handled from match results.
     """
     soup = BeautifulSoup(html, "html.parser")
 
     eliminated = []
 
     for card in soup.select(TEAM_CARD_SELECTOR):
-        if team_card_stage(card) != GROUP_STAGE_LABEL:
+        if not is_group_stage_exit(team_card_stage(card)):
             continue
 
         abbr = team_card_abbr(card)
