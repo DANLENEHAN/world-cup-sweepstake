@@ -266,8 +266,13 @@
         );
 
         // Most recent first for results/all; upcoming stays chronological.
-        // Sort is stable, so matches within the same date keep their order.
+        // Finished games carry no kickoff time (FIFA shows "FT" instead), so
+        // the only ordering we have is the date plus FIFA's chronological
+        // document order within a day. Reversing flips both, then a stable
+        // date-descending sort keeps days in order while leaving the
+        // last-played game of each day on top.
         if (filter === "played" || filter === "all") {
+          visible.reverse();
           visible.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
         }
 

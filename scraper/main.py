@@ -12,7 +12,7 @@ from playwright.sync_api import sync_playwright
 
 
 URL = "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=GB&wtw-filter=ALL"
-STANDINGS_URL = "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/standings"
+TEAMS_URL = "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams"
 
 OUTPUT_FILE = Path("site/data/scores.json")
 GAMES_OUTPUT_FILE = Path("site/data/games.json")
@@ -35,13 +35,18 @@ VENUE_SELECTOR = "div.match-row_stadiumCityLabels__zjXUq span"
 # home then away, sitting either side of the full-time score.
 PENALTY_SELECTOR = "span[class*='match-row_penalties']"
 
-# Standings page: rows for teams knocked out at the group stage carry an
-# "eliminated" modifier class. Class hashes are matched by prefix so a FIFA
-# build bump doesn't silently break selection.
-STANDINGS_ROW_SELECTOR = "tr[class*='standings-table-row_tableRow']"
-STANDINGS_ELIMINATED_SELECTOR = "tr[class*='standings-table-row_eliminated']"
-STANDINGS_ABBR_SELECTOR = "div.team-abbreviations_container__wWtDG span"
-STANDINGS_NAME_SELECTOR = "span.d-none.d-md-1024-block"
+# Teams page: each team card shows the furthest stage it reached. A card whose
+# "Stage" row reads "First Stage" means the team went out in the group stage;
+# anything beyond that is handled by knockout match results instead. Class
+# hashes are matched by prefix so a FIFA build bump doesn't break selection.
+TEAM_CARD_SELECTOR = "div[class*='team-card_teamCard']"
+TEAM_CARD_ROW_SELECTOR = "div[class*='team-card-body-row_cardBodyRow']"
+TEAM_CARD_LABEL_SELECTOR = "span[class*='team-card-body-row_label']"
+TEAM_CARD_VALUE_SELECTOR = "span[class*='team-card-body-row_right']"
+TEAM_CARD_NAME_SELECTOR = "h3[class*='team-card_teamName']"
+TEAM_CARD_FLAG_SELECTOR = "img[class*='team-card_teamFlag']"
+STAGE_ROW_LABEL = "Stage"
+GROUP_STAGE_LABEL = "First Stage"
 
 # The FIFA page renders kickoff times in UTC regardless of locale.
 SOURCE_TIME_ZONE = timezone.utc
@@ -584,23 +589,50 @@ def collect_eliminated(games: list[dict]) -> list[str]:
     return eliminated
 
 
+def team_card_stage(card) -> Optional[str]:
+    """The furthest stage a team reached, from its team card's "Stage" row."""
+    for row in card.select(TEAM_CARD_ROW_SELECTOR):
+        label_el = row.select_one(TEAM_CARD_LABEL_SELECTOR)
+
+        if label_el and label_el.get_text(strip=True) == STAGE_ROW_LABEL:
+            value_el = row.select_one(TEAM_CARD_VALUE_SELECTOR)
+            return value_el.get_text(strip=True) if value_el else None
+
+    return None
+
+
+def team_card_abbr(card) -> Optional[str]:
+    """The team's own three-letter code, read from its flag image URL."""
+    img = card.select_one(TEAM_CARD_FLAG_SELECTOR)
+
+    if img is None:
+        return None
+
+    src = (img.get("src") or "").rstrip("/")
+    code = src.rsplit("/", 1)[-1]
+
+    return code or None
+
+
 def collect_group_eliminated(html: str) -> list[str]:
     """Names of teams knocked out at the group stage.
 
-    The standings page flags these rows with an "eliminated" modifier class.
-    Teams are keyed by their three-letter code so naming differences between
-    pages (e.g. "Korea Republic" vs "South Korea") map back to our canonical
-    names.
+    The teams page shows each team's furthest stage; a card reading "First
+    Stage" means the team never left the group. Teams are keyed by their
+    three-letter code (read from the flag URL) so naming differences map back
+    to our canonical names. Knockout exits are handled from match results.
     """
     soup = BeautifulSoup(html, "html.parser")
 
     eliminated = []
 
-    for row in soup.select(STANDINGS_ELIMINATED_SELECTOR):
-        abbr_el = row.select_one(STANDINGS_ABBR_SELECTOR)
-        abbr = abbr_el.get_text(strip=True) if abbr_el else None
+    for card in soup.select(TEAM_CARD_SELECTOR):
+        if team_card_stage(card) != GROUP_STAGE_LABEL:
+            continue
 
-        name_el = row.select_one(STANDINGS_NAME_SELECTOR)
+        abbr = team_card_abbr(card)
+
+        name_el = card.select_one(f"{TEAM_CARD_NAME_SELECTOR} span[title]")
         raw_name = name_el.get_text(strip=True) if name_el else None
 
         name = canonical_team_name(abbr, raw_name) or abbr
@@ -629,13 +661,13 @@ def main() -> None:
     games = collect_games(html)
     eliminated = collect_eliminated(games)
 
-    # Group-stage exits live on a separate standings page. A failure there
+    # Group-stage exits live on a separate teams page. A failure there
     # shouldn't lose the scores and fixtures we already scraped.
     try:
-        standings_html = fetch_html(STANDINGS_URL, STANDINGS_ROW_SELECTOR)
-        group_eliminated = collect_group_eliminated(standings_html)
+        teams_html = fetch_html(TEAMS_URL, TEAM_CARD_SELECTOR)
+        group_eliminated = collect_group_eliminated(teams_html)
     except Exception as exc:  # noqa: BLE001 - best-effort enrichment
-        print(f"Warning: failed to scrape standings: {exc}", flush=True)
+        print(f"Warning: failed to scrape teams page: {exc}", flush=True)
         group_eliminated = []
 
     # Merge knockout losers with group-stage exits, preserving order and
